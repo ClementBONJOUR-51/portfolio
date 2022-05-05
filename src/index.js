@@ -9,7 +9,7 @@ import Contact from './screens/Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename='/portfolio'>
      <Routes>
         <Route path="/" element={ <Home/> } />
         <Route path="contact" element={ <Contact/> } />
