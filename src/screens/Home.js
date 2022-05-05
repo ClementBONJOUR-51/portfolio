@@ -18,11 +18,11 @@ function Home() {
 
   return (
     <div className="bg-image" style={{ backgroundImage: `url(${img_background}`, backgroundSize: 'cover', backgroundPosition: 'center', height: "100vh" }}>
-      <Navbar light expand="md">
-        <NavbarBrand href="/">Portfolio</NavbarBrand>
+      <Navbar light expand="md" className='pt-4'>
+        <NavbarBrand href="/" className='ms-5'>Portfolio</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav navbar className='d-flex justify-content-around ms-5' style={{ width: "80vw" }}>
+          <Nav navbar className='d-flex justify-content-around' style={{ width: "60vw", marginLeft: "200px", marginRight: "200px" }}>
             <NavItem>
               <NavLink href="/components/">ACCUEIL</NavLink>
             </NavItem>
@@ -53,6 +53,7 @@ function Home() {
       <div style={{ paddingTop: "40vh", paddingLeft: "30vh" }}>
         <h1>Clément BONJOUR</h1>
         <h5>Etudiant en informatique</h5>
+        <br />
         {/* <Button outline size="lg" className='rounded-0 text-dark border-dark'>Découvrez moi</Button> */}
         <button type="button" className="btn btn-outline-dark rounded-0 btn-lg">Découvrez moi</button>
       </div>
