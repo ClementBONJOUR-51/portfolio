@@ -24,28 +24,31 @@ function Home() {
         <Collapse isOpen={isOpen} navbar>
           <Nav navbar className='d-flex justify-content-around' style={{ width: "60vw", marginLeft: "200px", marginRight: "200px" }}>
             <NavItem>
-              <NavLink href="/components/">ACCUEIL</NavLink>
+              <NavLink href="#home">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/">À PROPOS</NavLink>
+              <NavLink href="#about">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/">PPE</NavLink>
+              <NavLink href="#skills">Skills</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/">STAGES</NavLink>
+              <NavLink href="#spp">SPP</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/">VEILLE INFORMATIQUE</NavLink>
+              <NavLink href="#internships">Internships</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/">RÉCENT TRAVAUX</NavLink>
+              <NavLink href="#Computer_manitoring">Computer manitoring</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/">SUIVI SCOLAIRE</NavLink>
+              <NavLink href="#recent_works">Recent works</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/">CONTACT</NavLink>
+              <NavLink href="#Schooling">Schooling</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#contact">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

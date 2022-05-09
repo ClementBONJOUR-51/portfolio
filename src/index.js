@@ -4,16 +4,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from "react-router-dom"
 import { BrowserRouter } from "react-router-dom";
 
-import Home from './screens/Home';
-import Contact from './screens/Contact';
+import Main from './screens/Main';
+import Contact from './components/Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-     <Routes>
-        <Route path="/" element={ <Home/> } />
-        <Route path="contact" element={ <Contact/> } />
-      </Routes>
+  <BrowserRouter basename='/portfolio'>
+    <Routes>
+      <Route path="/" element={<Main />} />
+      <Route path="contact" element={<Contact />} />
+    </Routes>
   </BrowserRouter>
 );
 
