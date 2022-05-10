@@ -18,7 +18,7 @@ function Home() {
 
   return (
     <div className="bg-image" style={{ backgroundImage: `url(${img_background}`, backgroundSize: 'cover', backgroundPosition: 'center', height: "100vh" }}>
-      <Navbar light expand="md" className='pt-4'>
+      <Navbar light expand="md" className='py-4 bg-white' fixed="top">
         <NavbarBrand href="/" className='ms-5'>Portfolio</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

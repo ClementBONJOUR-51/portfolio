@@ -12,7 +12,7 @@ const ProgressBar = ({ value }) => {
 
 function Skills() {
     return (
-        <Container className="container text-center mt-5 p-5" id='about'>
+        <Container className="container text-center mt-5 p-5" id='skills'>
             <h1>Skills</h1>
             <img src={img_line} alt="line" className="img-fluid mb-5" />
             <Row className='my-5'>

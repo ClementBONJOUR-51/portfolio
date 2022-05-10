@@ -5,7 +5,7 @@ import img_bg_SPP from '../assets/img/bg_SPP.jpg';
 
 function SPP() {
     return (
-        <div>
+        <div id='spp'>
             <div style={{
                 backgroundImage: `url(${img_bg_SPP})`, minHeight: "300px",
                 backgroundAttachment: "fixed", backgroundPosition: "center",
