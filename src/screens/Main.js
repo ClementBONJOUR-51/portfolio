@@ -5,6 +5,7 @@ import Skills from '../components/Skills';
 import SPP from '../components/SPP';
 import Internships from '../components/Internships';
 import PersonalWork from '../components/PersonalWork';
+import Schooling from '../components/Schooling';
 
 function Main() {
 
@@ -16,6 +17,7 @@ function Main() {
       <SPP />
       <Internships />
       <PersonalWork />
+      <Schooling />
     </div>
   );
 }

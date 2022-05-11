@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
-function About() {
+function ModalBruit() {
 
     const [open, setOpen] = useState(false)
 
@@ -22,4 +22,4 @@ function About() {
     );
 }
 
-export default About;
+export default ModalBruit;

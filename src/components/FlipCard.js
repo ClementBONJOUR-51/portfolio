@@ -1,7 +1,6 @@
 import React from 'react';
 import './FlipCard.css';
 import img_bg_SPP from '../assets/img/bg_SPP.jpg';
-import { Row, Col, Button } from 'reactstrap';
 
 function FlipCard({ title, img_front, img_back, children }) {
     return (

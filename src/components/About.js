@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import img_line from '../assets/img/lines.svg';
 
-function ModalBruit() {
+function About() {
     return (
         <Container className="container text-center mt-5 p-5">
             <Row>
@@ -22,4 +22,4 @@ function ModalBruit() {
     );
 }
 
-export default ModalBruit;
+export default About;
