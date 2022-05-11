@@ -3,7 +3,7 @@ import './FlipCard.css';
 import img_bg_SPP from '../assets/img/bg_SPP.jpg';
 import { Row, Col, Button } from 'reactstrap';
 
-function FlipCard({ title, img_front, img_back }) {
+function FlipCard({ title, img_front, img_back, children }) {
     return (
 
         <div className="flip-card border-0">
@@ -20,10 +20,7 @@ function FlipCard({ title, img_front, img_back }) {
                     boxShadow: "0px 0px 80px 0.05px grey", color: "#212529"
                 }}>
                     <h3 className='my-5'>{title}</h3>
-                    <Row>
-                        <Col><Button className='rounded-0 py-3 px-4 text-uppercase fw-bold mt-3' style={{ backgroundColor: "#212121" }}>Détails <span role="img" aria-label="hello">🔎</span></Button></Col>
-                        <Col><Button className='rounded-0 py-3 px-4 text-uppercase fw-bold mt-3' style={{ backgroundColor: "#212121" }}>Détails <span role="img" aria-label="hello">🔎</span></Button></Col>
-                    </Row>
+                    {children}
                 </div>
             </div>
         </div>

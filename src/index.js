@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // basename='/portfolio'
-  <BrowserRouter basename='/portfolio'>
+  <BrowserRouter>
     <Routes>
       <Route path="/" element={<Main />} />
       <Route path="contact" element={<Contact />} />
