@@ -5,15 +5,13 @@ import { Routes, Route } from "react-router-dom"
 import { BrowserRouter } from "react-router-dom";
 
 import Main from './screens/Main';
-import Contact from './components/Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // basename='/portfolio'
-  <BrowserRouter basename='/portfolio'>
+  <BrowserRouter>
     <Routes>
       <Route path="/" element={<Main />} />
-      <Route path="contact" element={<Contact />} />
     </Routes>
   </BrowserRouter>
 );

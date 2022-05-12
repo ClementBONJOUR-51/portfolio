@@ -6,6 +6,7 @@ import SPP from '../components/SPP';
 import Internships from '../components/Internships';
 import PersonalWork from '../components/PersonalWork';
 import Schooling from '../components/Schooling';
+import Contact from '../components/Contact';
 
 function Main() {
 
@@ -18,6 +19,7 @@ function Main() {
       <Internships />
       <PersonalWork />
       <Schooling />
+      <Contact />
     </div>
   );
 }
