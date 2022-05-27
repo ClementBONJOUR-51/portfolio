@@ -21,7 +21,7 @@ function Home() {
       <Navbar light expand="md" className='py-4 bg-white' fixed="top">
         <NavbarBrand href="/" className='ms-5'>Portfolio</NavbarBrand>
         <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
+        <Collapse isOpen={isOpen} navbar id='home'>
           <Nav navbar className='d-flex justify-content-around' style={{ width: "60vw", marginLeft: "200px", marginRight: "200px" }}>
             <NavItem>
               <NavLink href="#home">Home</NavLink>
@@ -33,19 +33,16 @@ function Home() {
               <NavLink href="#skills">Skills</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#spp">SPP</NavLink>
-            </NavItem>
-            <NavItem>
               <NavLink href="#internships">Internships</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#Computer_manitoring">Computer manitoring</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#recent_works">Recent works</NavLink>
+              <NavLink href="#personal_works">Personal works</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#Schooling">Schooling</NavLink>
+              <NavLink href="#schooling">Schooling</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#contact">Contact</NavLink>
@@ -58,7 +55,7 @@ function Home() {
         <h5>Etudiant en informatique</h5>
         <br />
         {/* <Button outline size="lg" className='rounded-0 text-dark border-dark'>Découvrez moi</Button> */}
-        <button type="button" className="btn btn-outline-dark rounded-0 btn-lg">Découvrez moi</button>
+        <a type="button" className="btn btn-outline-dark rounded-0 btn-lg" href="#about">Découvrez moi</a>
       </div>
     </div >
   );

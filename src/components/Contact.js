@@ -21,6 +21,7 @@ const ContactFlip = ({ url }) => {
 function Contact() {
   return (
     <Container className="text-center mb-5">
+      <div id='contact' style={{ position: "absolute", marginTop: "-300px" }}></div>
       <h1>Contact</h1>
       <img src={img_line} alt="line" className="img-fluid mb-5" />
       <Row className="m-4" style={{ height: "100px" }}>

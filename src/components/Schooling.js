@@ -1,12 +1,16 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import img_line from '../assets/img/lines.svg';
 import 'react-vertical-timeline-component/style.min.css';
 
 function Schooling
     () {
     return (
         <Container id="Schooling" className="container text-center mt-5 p-5">
+            <div id='schooling' style={{ position: "absolute", marginTop: "-300px" }}></div>
+            <h1>Schooling</h1>
+            <img src={img_line} alt="line" className="img-fluid mb-5" />
             <hr className='mb-0' />
             <VerticalTimeline lineColor='#464646'>
                 <VerticalTimelineElement

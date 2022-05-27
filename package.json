@@ -4,6 +4,7 @@
   "homepage": "https://clementbonjour-51.github.io/portfolio",
   "private": false,
   "dependencies": {
+    "@babel/preset-react": "^7.17.12",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,6 +13,7 @@
     "react": "^18.1.0",
     "react-bootstrap": "^2.3.1",
     "react-dom": "^18.1.0",
+    "react-input-range": "^1.3.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^2.1.8",
     "react-social-icons": "^5.13.0",

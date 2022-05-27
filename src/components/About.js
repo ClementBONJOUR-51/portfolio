@@ -5,6 +5,7 @@ import img_line from '../assets/img/lines.svg';
 function About() {
     return (
         <Container className="container text-center mt-5 p-5">
+            <div id='about' style={{ position: "absolute", marginTop: "-300px" }}></div>
             <Row>
                 <Col></Col>
                 <Col>
