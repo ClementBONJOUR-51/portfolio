@@ -22,7 +22,7 @@ function Home() {
         <NavbarBrand href="/" className='ms-5'>Portfolio</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar id='home'>
-          <Nav navbar className='d-flex justify-content-around' style={{ width: "60vw", marginLeft: "200px", marginRight: "200px" }}>
+          <Nav navbar className='d-flex justify-content-around' style={{ width: "60vw", marginLeft: "50px", marginRight: "100px" }}>
             <NavItem>
               <NavLink href="#home">Home</NavLink>
             </NavItem>
@@ -35,9 +35,9 @@ function Home() {
             <NavItem>
               <NavLink href="#internships">Internships</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="#Computer_manitoring">Computer manitoring</NavLink>
-            </NavItem>
+            {/* <NavItem>
+              <NavLink href="#Computer_manitoring">Computer monitoring</NavLink>
+            </NavItem> */}
             <NavItem>
               <NavLink href="#personal_works">Personal works</NavLink>
             </NavItem>

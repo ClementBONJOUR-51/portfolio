@@ -14,7 +14,7 @@ function Internships() {
 
                     <h2>SNCF Réseau | DUT</h2>
                     <p className='m-5'>Development of a web application for SNCF agents (intranet)</p>
-                    <Button color="danger rounded-0">CONFIDENTIAL PROJECT</Button>
+                    <Button color="danger rounded-0" style={{cursor:"no-drop"}}>CONFIDENTIAL PROJECT</Button>
 
                     <hr className='m-5' />
 
@@ -98,7 +98,7 @@ function Internships() {
 
                     <hr className='m-5' />
 
-                    <h2>SQUIRREL | Licence et CESI (A3)</h2>
+                    {/* <h2>SQUIRREL | Licence et CESI (A3)</h2> */}
                 </Col>
                 <Col></Col>
             </Row>

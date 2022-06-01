@@ -72,7 +72,7 @@ function Schooling
                     <h3 className="vertical-timeline-element-title" style={{ color: "#b3b3b3" }}>DUT Informatique</h3>
                     <h5 className="vertical-timeline-element-subtitle">IUT Reims-Châlons-Charleville</h5>
                 </VerticalTimelineElement>
-                <Row>
+                <Row className='m-5'>
                     <Col xs={8} className="px-0"><hr /></Col>
                     <Col className='border border-end-0 p-4 text-uppercase'
                         style={{
@@ -115,7 +115,7 @@ function Schooling
                     dateClassName={"text-start"}
                 >
                     <h3 className="vertical-timeline-element-title" style={{ color: "#b3b3b3" }}>Diplôme national du brevet</h3>
-                    <h5 className="vertical-timeline-element-subtitle">Collège Pierre de Coubertin | Cormontreuil</h5>
+                    <h5 className="vertical-timeline-element-subtitle">Pierre de Coubertin College | Cormontreuil</h5>
                 </VerticalTimelineElement>
             </VerticalTimeline>
             <hr className='mt-0' />

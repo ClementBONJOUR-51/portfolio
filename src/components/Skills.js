@@ -5,7 +5,7 @@ import img_bg_SPP from '../assets/img/bg_SPP.jpg';
 
 const ProgressBar = ({ value }) => {
     return (
-        <div className="progress rounded-0" style={{ backgroundColor: "#dfdfdf" }}>
+        <div className="progress rounded-0" style={{ backgroundColor: "#cfcfcf" }}>
             <div className="progress-bar" role="progressbar" style={{ width: `${value + 0}%`, backgroundColor: "#212121" }} aria-valuenow={value} aria-valuemin="0" aria-valuemax="100"></div>
         </div>
     );
