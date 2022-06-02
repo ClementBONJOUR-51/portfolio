@@ -114,7 +114,7 @@ function Schooling
                     icon={""}
                     dateClassName={"text-start"}
                 >
-                    <h3 className="vertical-timeline-element-title" style={{ color: "#b3b3b3" }}>v</h3>
+                    <h3 className="vertical-timeline-element-title" style={{ color: "#b3b3b3" }}>Diplôme national du brevet</h3>
                     <h5 className="vertical-timeline-element-subtitle">Pierre de Coubertin College | Cormontreuil</h5>
                 </VerticalTimelineElement>
             </VerticalTimeline>
