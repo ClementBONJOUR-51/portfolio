@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "006204efa1714c6cbefe",
+    "revision": "7f11cfd502ed15925e09",
     "url": "/portfolio/static/css/main.80e1e269.chunk.css"
   },
   {
-    "revision": "006204efa1714c6cbefe",
-    "url": "/portfolio/static/js/main.fcaf7b33.chunk.js"
+    "revision": "7f11cfd502ed15925e09",
+    "url": "/portfolio/static/js/main.65c22f0e.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/Traitementdonnees.62d923e7.jpg"
   },
   {
-    "revision": "bdbaa6fccaac337b4c9c0f08d3b7a16a",
+    "revision": "7ff38f76c6120c4b1d222d73d65c53de",
     "url": "/portfolio/index.html"
   }
 ];
