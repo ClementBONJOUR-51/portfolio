@@ -8,7 +8,7 @@ function Internships() {
             <Row>
                 <Col></Col>
                 <Col xs={8}>
-                    <div id='internships' style={{ position: "absolute", marginTop: "-300px" }}></div>
+                    <div id='internships' style={{ position: "absolute", marginTop: "-100px" }}></div>
                     <h1>Internships</h1>
                     <img src={img_line} alt="line" className="img-fluid mb-5" />
 

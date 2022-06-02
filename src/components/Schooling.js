@@ -8,7 +8,7 @@ function Schooling
     () {
     return (
         <Container id="Schooling" className="container text-center mt-5 p-5">
-            <div id='schooling' style={{ position: "absolute", marginTop: "-300px" }}></div>
+            <div id='schooling' style={{ position: "absolute", marginTop: "-100px" }}></div>
             <h1>Schooling</h1>
             <img src={img_line} alt="line" className="img-fluid mb-5" />
             <hr className='mb-0' />
@@ -58,7 +58,7 @@ function Schooling
                     icon={""}
                 >
                     <h3 className="vertical-timeline-element-title" style={{ color: "#b3b3b3" }}>Brevet de fin de 2e cycle de Musique</h3>
-                    <h5 className="vertical-timeline-element-subtitle">Conservatoire à rayonnement régional | REIMS</h5>
+                    <h5 className="vertical-timeline-element-subtitle">Conservatory | REIMS</h5>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
@@ -92,7 +92,7 @@ function Schooling
                     dateClassName={"text-start"}
                 >
                     <h3 className="vertical-timeline-element-title" style={{ color: "#b3b3b3" }}>Baccalauréat STI2D (SIN)</h3>
-                    <h5 className="vertical-timeline-element-subtitle">Lycée Franklin Roosevelt</h5>
+                    <h5 className="vertical-timeline-element-subtitle">Franklin Roosevelt High school</h5>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
@@ -103,7 +103,7 @@ function Schooling
                     icon={""}
                 >
                     <h3 className="vertical-timeline-element-title" style={{ color: "#b3b3b3" }}>Seconde Générale</h3>
-                    <h5 className="vertical-timeline-element-subtitle">Lycée Hugues Libergier | Reims</h5>
+                    <h5 className="vertical-timeline-element-subtitle">Hugues Libergier High school | Reims</h5>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
@@ -114,7 +114,7 @@ function Schooling
                     icon={""}
                     dateClassName={"text-start"}
                 >
-                    <h3 className="vertical-timeline-element-title" style={{ color: "#b3b3b3" }}>Diplôme national du brevet</h3>
+                    <h3 className="vertical-timeline-element-title" style={{ color: "#b3b3b3" }}>v</h3>
                     <h5 className="vertical-timeline-element-subtitle">Pierre de Coubertin College | Cormontreuil</h5>
                 </VerticalTimelineElement>
             </VerticalTimeline>

@@ -1,5 +1,5 @@
-import React, { useRef, useState, useEffect } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Container, Row, Col, Input, Collapse } from 'reactstrap';
+import React, { useState } from 'react';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 function ModalJoystick() {
 
@@ -12,43 +12,42 @@ function ModalJoystick() {
                 <ModalHeader toggle={() => setOpen(!open)}>Maze</ModalHeader>
                 <ModalBody>
                     <div class="modal-header">
-                        <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-                        <img class="img-res img-fluid" src="https://clementbonjour-51.github.io/webjoystick/aqua.png" alt="" />
+                        <img alt="" class="img-res img-fluid" src="https://clementbonjour-51.github.io/webjoystick/aqua.png" />
                     </div>
                     <div class="modal-body">
-                        <h4 class="modal-title">Déplacement à la souris de facon "joystick"</h4><br />
-                        <h2>Idée de départ</h2>
-                        <p>Les principaux périphériques d'un ordinateur sont le clavier et la souris. Dans les jeux vidéos sur ordinateur, lorsque l'on déplace notre personnage, il est alors fréquemment utile d'utiliser les touches directionnelles de notre clavier
-                            &#9193;&#9194;&#9195;&#9196; ou bien alors les touches Z Q S D. Le soucis avec les touches de clavier est qu'elles sont enfoncées, ou non. Il n'y a alors que peu de liberté quant au déplacement de notre personnage car il y a seulement
-                            8 directions possibles (haut, bas, droite, gauche, haut-gauche, haut-droite, bas-gauche, bas-droite) et pas de vitesse de déplacement suivant si la touche est beaucoup enfoncée ou non.</p>
+                        <h4 class="modal-title">Moving with the mouse in a "joystick" way</h4><br />
+                        <h2>Starting idea</h2>
+                        <p>The main peripherals of a computer are the keyboard and the mouse. In computer video games, when we move our character, it is then frequently useful to use the directional keys on our keyboard
+                            <span role="img" aria-label="hello">&#9193;&#9194;&#9195;&#9196;</span> or else the Z Q S D keys. The problem with the keyboard keys is that they are pressed or not. There is then little freedom as to the movement of our character because there is only
+                            8 possible directions (up, down, right, left, up-left, up-right, down-left, down-right) and no movement speed depending on whether the key is pressed a lot or not.</p>
                         <hr />
                         <div class="row">
                             <figure class="col-sm-4 col-xs-12">
-                                <img src="https://clementbonjour-51.github.io/webjoystick/8deplacement.png" height="250px" width="250px" />
-                                <figcaption>Seulement 8 directions possibles</figcaption>
+                                <img alt="" src="https://clementbonjour-51.github.io/webjoystick/8deplacement.png" height="250px" width="250px" />
+                                <figcaption>Only 8 possible directions</figcaption>
                             </figure>
                             <figure class="col-sm-4 col-xs-12">
-                                <img src="https://clementbonjour-51.github.io/webjoystick/infiniDeplacement.png" height="250px" width="250px" />
-                                <figcaption> Une infinité de direction possible (Mathématiquement parlant)</figcaption>
+                                <img alt="" src="https://clementbonjour-51.github.io/webjoystick/infiniDeplacement.png" height="250px" width="250px" />
+                                <figcaption>An infinity of possible direction (Mathematically speaking)</figcaption>
                             </figure>
                             <figure class="col-sm-4 col-xs-12">
-                                <img src="https://clementbonjour-51.github.io/webjoystick/curseur.jpg" height="250px" width="250px" />
-                                <figcaption>Se déplace directement (la direction est le mouvent que prend la main de l'utilisateur à l'instant même)</figcaption>
+                                <img alt="" src="https://clementbonjour-51.github.io/webjoystick/curseur.jpg" height="250px" width="250px" />
+                                <figcaption>Moves directly (direction is the movement the user's hand is taking at the moment)</figcaption>
                             </figure>
                         </div>
                         <hr />
-                        <p>La souris elle, nous sera utile pour le contrôle de la caméra/l'angle de vue. Fort utile dans les jeux ou l'on peut se mouvoir dans un éspace en 3 dimensions (exemple: World of Warcraft, Minecraft, Fornite, etc ...) mais qu'en est-il
-                            des jeux ou l'on ne peut se mouvoir que dans un espace en 2 dimensions ?</p>
+                        <p>The mouse will be useful for controlling the camera/viewing angle. Very useful in games where you can move in a 3-dimensional space (examples: World of Warcraft, Minecraft, Fornite, etc ...) but what about
+                            games where you can only move in a 2-dimensional space?</p>
 
-                        <p>Si les touches directionnelles d'une console peuvent être comparées aux touches directionnelles d'un clavier, le joystick lui ne sera pas exactement comme la souris car lorsqu'on utilise une souris pour pointer quelque chose, le pointeur/curseur
-                            suivra directement le déplacement de notre main alors qu'avec un joystick, le "pointeur" lui se déplacera dans la direction qu'on lui indiquera jusqu'à ce que nous décidons de lacher ce joystick pour qu'il s'arrête. On ne le déplace
-                            pas directement mais on lui donne une vitesse dans une direction précise pour que ensuite il se déplace. La difference est subtile et pas facile à retranscrire par écrit mais j'espère que vous m'aurez compris &#129310;.</p>
+                        <p>While the directional keys on a console can be compared to the directional keys on a keyboard, the joystick will not be exactly like the mouse because when using a mouse to point at something, the pointer/cursor
+                            will directly follow the movement of our hand whereas with a joystick, the "pointer" will move in the direction that we will indicate to it until we decide to let go of this joystick so that it stops. We don't move it
+                            not directly but we give it a speed in a specific direction so that it then moves. The difference is subtle and not easy to transcribe in writing but I hope you have understood me <span role="img" aria-label="hello">&#129310;</span>.</p>
 
-                        <p>Mon but dans ce travail a été de retranscrire cette manière de se déplacer avec un joystick mais à la souris</p>
+                        <p>My goal in this work was to transcribe this way of moving with a joystick but with a mouse</p>
 
                     </div>
                     <div class="modal-footer">
-                        <a className='btn rounded-0 p-3 text-uppercase fw-bold' style={{ backgroundColor: "#212121", color: "white" }} href="https://clementbonjour-51.github.io/webjoystick/aqua.html" target="_blank">DEMO</a>
+                        <a className='btn rounded-0 p-3 text-uppercase fw-bold' style={{ backgroundColor: "#212121", color: "white" }} href="https://clementbonjour-51.github.io/webjoystick/aqua.html" target="_blank" rel="noopener noreferrer">DEMO</a>
                     </div>
                 </ModalBody>
                 <ModalFooter>

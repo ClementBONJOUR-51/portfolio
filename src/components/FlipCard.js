@@ -10,13 +10,13 @@ function FlipCard({ title, img_front, img_back, children }) {
                 <div className="flip-card-front" style={{
                     backgroundImage: `url(${img_front ? img_front : img_bg_SPP})`, backgroundPosition: "center",
                     backgroundRepeat: "no-repeat", backgroundSize: "cover",
-                    boxShadow: "0px 0px 80px 0.05px grey"
+                    boxShadow: "0px 0px 20px 0.05px grey"
                 }}>
                 </div>
                 <div className="flip-card-back" style={{
                     backgroundImage: `url(${img_back})`, backgroundPosition: "center",
                     backgroundRepeat: "no-repeat", backgroundSize: "cover",
-                    boxShadow: "0px 0px 80px 0.05px grey", color: "#212529"
+                    boxShadow: "0px 0px 20px 0.05px grey", color: "#212529"
                 }}>
                     <h3 className='my-5'>{title}</h3>
                     {children}

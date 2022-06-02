@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Container, Row, Col, Input, Collapse } from 'reactstrap';
 
 function ModalPerlin() {
@@ -39,7 +39,7 @@ function ModalPerlin() {
         var context = newCanvas.getContext("2d");
         var width = newCanvas.width;
         var height = newCanvas.height;
-        var imageData = context.createImageData(width, height);
+        // var imageData = context.createImageData(width, height);
         var imageDataModel = context.createImageData(width, height);
 
         function createCanvas(imageData, taille, targetCanvas) {
@@ -230,70 +230,68 @@ function ModalPerlin() {
                         </Collapse>
                         <Collapse isOpen={!demo}>
                             <div class="modal-header">
-                                <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-                                <img class="img-res img-fluid" src="https://clementbonjour-51.github.io/MapGen/bruit.jpg" alt="" />
+                                <img alt="" class="img-res img-fluid" src="https://clementbonjour-51.github.io/MapGen/bruit.jpg" />
                             </div>
                             <div class="modal-body">
-                                <h4 class="modal-title">Géneration de carte (JS)</h4><br />
-                                <h2>Idée de départ</h2>
-                                <p>Reproduire le résultat d'un algorithme comme celui du bruit de Perlin sans regarder la solution de l'algorithme. Le bruit de Perlin (2ème image) est une texture procédurale qui est générée à partir d'un bruit (1ère image). Ceci est
-                                    beaucoup utilisé dans les effets visuels comme pour les brouillards ou alors les nuages mais le bruit de Perlin est aussi utilisé comme un générateur de carte ou les différentes zones de sombre et de clair seraient du relief.</p>
+                                <h4 class="modal-title">Map generation (JS)</h4><br />
+                                <h2>Starting idea</h2>
+                                <p>Reproduce the result of an algorithm such as Perlin noise without looking at the solution of the algorithm. Perlin noise (2nd image) is a procedural texture that is generated from noise (1st image). this is
+                                    much used in visual effects such as for fogs or clouds but Perlin noise is also used as a map generator where the different areas of dark and light would be relief.</p>
                                 <hr />
-                                <img src="https://clementbonjour-51.github.io/MapGen/bruitPixel.PNG" height="250px" width="250px" />
-                                <img src="https://clementbonjour-51.github.io/MapGen/perlin.png" height=" 250px " width="250px " />
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/bruitPixel.PNG" height="250px" width="250px" />
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/perlin.png" height=" 250px " width="250px " />
                                 <hr />
-                                <p>Le bruit est une image aléatoirement constituée de pixels noirs ou blancs et si l'on imagine que ce bruit est une carte vue du dessus avec du relief suivant la couleur du pixel cela ne fait encore aucun sens. Explications :</p>
-
+                                <p>The noise is an image randomly made up of black or white pixels and if we imagine that this noise is a map seen from above with relief according to the color of the pixel, that still makes no sense. Explanations:</p>
                                 <hr />
-                                <img src="https://clementbonjour-51.github.io/MapGen/graphique1.png" /> Image tout blanche<br />
-                                <img src="https://clementbonjour-51.github.io/MapGen/graphique2.png" /> Image tout noir<br />
-                                <img src="https://clementbonjour-51.github.io/MapGen/graphique3.png" /> Image avec des pixels aléatoires entre blanc et noir (dit bruit ou neige)<br />
-                                <img src="https://clementbonjour-51.github.io/MapGen/graphique4.png" /> Image constituée de pixels gris (+ ou - blanc et noir)<br />
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/graphique1.png" /> All white image<br />
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/graphique2.png" /> All black image<br />
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/graphique3.png" /> Image with random pixels between white and black (says noise or snow)<br />
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/graphique4.png" /> Image consisting of gray pixels (+ or - white and black)<br />
                                 <hr />
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-sm-6 col-xs-12">
-                                            <p>Donc vu du dessus cela pourrait ressembler à ceci :</p>
-                                            <img src="https://clementbonjour-51.github.io/MapGen/perlin.png" height="250px" width="250px" />
+                                            <p>So from above it might look like this:</p>
+                                            <img alt="" src="https://clementbonjour-51.github.io/MapGen/perlin.png" height="250px" width="250px" />
                                         </div>
                                         <div class="col-sm-6 col-xs-12">
-                                            <p>C'est comme une carte topographique qui nous montre le relief :</p>
-                                            <img src="https://clementbonjour-51.github.io/MapGen/carteFrancejpg.jpg" height="250px" width="250px" />
+                                            <p>It's like a topographic map that shows us the relief:</p>
+                                            <img alt="" src="https://clementbonjour-51.github.io/MapGen/carteFrancejpg.jpg" height="250px" width="250px" />
                                         </div>
                                     </div>
                                 </div>
 
                                 <hr />
-                                <p>Le but est donc d'aplanir les différences entre les pixels noirs et blancs avec des niveaux de gris différents pour faire un "dégradé".</p>
+                                <p>The goal is therefore to smooth out the differences between black and white pixels with different levels of gray to make a "gradient".</p>
                                 <br />
-                                <h2>Démarche</h2>
-                                <p>Pour que je puisse régler la différence entre les pixels, je dois les uniformiser mais seulement selon les pixels qui les entourent car si je les uniformisais tous, le résultat serait un carré rempli d'une seule même couleur grise.
-                                    Donc pixel par pixel, je regarde la couleur des pixels juste à coté (avec un rayon défini) et j'en fais une moyenne que je mélange avec mon pixel. Comme une image vaut mille mots ... :</p>
+                                <h2>Get Started</h2>
+                                <p>In order for me to adjust the difference between the pixels, I have to make them uniform but only according to the surrounding pixels because if I made them all uniform, the result would be a square filled with a single gray color.
+                                    So pixel by pixel, I look at the color of the pixels right next to it (with a defined radius) and I average it and mix it with my pixel. As a picture is worth a thousand words... :</p>
                                 <hr />
-                                <img src="https://clementbonjour-51.github.io/MapGen/etape1.png" height="200px" width="200px" />
-                                <img src="https://clementbonjour-51.github.io/MapGen/etape2.png" height="200px" width="200px" />
-                                <img src="https://clementbonjour-51.github.io/MapGen/etape3.png" height="200px" width="200px" />
-                                <img src="https://clementbonjour-51.github.io/MapGen/etape4.png" height="200px" width="200px" />
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/etape1.png" height="200px" width="200px" />
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/etape2.png" height="200px" width="200px" />
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/etape3.png" height="200px" width="200px" />
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/etape4.png" height="200px" width="200px" />
                                 <hr />
-                                <img src="https://clementbonjour-51.github.io/MapGen/etapeAll.png" height="200px" />
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/etapeAll.png" height="200px" />
                                 <hr />
-                                <p>Comme chaque pixel change selon les autres autour, des groupes de formes, des sortes de tâches comme des grumeaux dans une pâte.<br /> Ensuite j'augmente le contraste de l'image pour faire resortir ces tâches</p>
+                                <p>As each pixel changes according to the others around, groups of shapes, sort of spots like lumps in a paste.<br /> Then I increase the contrast of the image to make these spots stand out</p >
                                 <hr />
-                                <img src="https://clementbonjour-51.github.io/MapGen/contraste.png" />
-                                <h2>Observation et conclusion</h2>
-                                <p>Vous conviendrez que mon résultat ne resemble pas vraiment à un nuage mais peut très bien servir comme carte !</p>
-                                <img src="https://clementbonjour-51.github.io/MapGen/bruitPixel.PNG" height="200px" width="200px" />
-                                <img src="https://clementbonjour-51.github.io/MapGen/perlin.png" height="200px" width="200px" />
-                                <img src="http://libnoise.sourceforge.net/tutorials/images/newheightmap.jpg" height="200px" width="200px" />
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/contraste.png" />
+                                <h2>Observation and conclusion</h2>
+                                <p>You will agree that my result does not really look like a cloud but can very well be used as a map!</p>
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/bruitPixel.PNG" height="200px" width="200px" />
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/perlin.png" height="200px" width="200px" />
+                                <img alt="" src="http://libnoise.sourceforge.net/tutorials/images/newheightmap.jpg" height="200px" width="200px" />
                                 <hr />
-                                <img src="https://clementbonjour-51.github.io/MapGen/bruitPixel.PNG" height="200px" width="200px" />
-                                <img src="https://clementbonjour-51.github.io/MapGen/contraste.png" height="200px" width="200px" />
-                                <img src="https://clementbonjour-51.github.io/MapGen/color.png" height="200px" width="200px" /><p>🔼 mon résultat 🙂</p> <hr />
-                                <p> Le vrai "bruit de Perlin" n'utilise pas exactement le même procedé que moi mais je vous invite à le voir :
-                                    <a href="http://www.hyena.net.ee/rwg/Perlin%20Noise%20Generator.pdf" target="_blank">Perlin Noise Generator - Erich Erstu, Janar Sell, Suido Valli</a></p>
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/bruitPixel.PNG" height="200px" width="200px" />
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/contraste.png" height="200px" width="200px" />
+                                <img alt="" src="https://clementbonjour-51.github.io/MapGen/color.png" height="200px" width="200px" /><p><span role="img" aria-label="hello">🔼</span> my result <span role="img" aria-label="hello">🙂</span></p> <hr />
+                                <p> The real "Perlin noise" does not use exactly the same process as me but I invite you to see it:
+                                    <a href="http://www.hyena.net.ee/rwg/Perlin%20Noise%20Generator.pdf" target="_blank" rel="noopener noreferrer">Perlin Noise Generator - Erich Erstu, Janar Sell, Suido Valli</a></p>
                             </div>
                             <div class="modal-footer ">
-                                <a href="https://clementbonjour-51.github.io/MapGen/map.html" target="_blank " class="btn btn-fill ">Rendu du travail</a>
+                                <a href="https://clementbonjour-51.github.io/MapGen/map.html" target="_blank" rel="noopener noreferrer" class="btn btn-fill ">Rendering of work</a>
                             </div>
                         </Collapse>
                     </Container>

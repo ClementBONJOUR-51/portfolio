@@ -6,6 +6,7 @@ import Internships from '../components/Internships';
 import PersonalWork from '../components/PersonalWork';
 import Schooling from '../components/Schooling';
 import Contact from '../components/Contact';
+import Cesi from '../components/CESI';
 
 function Main() {
 
@@ -14,6 +15,7 @@ function Main() {
       <Home />
       <About />
       <Skills />
+      <Cesi />
       <Internships />
       <PersonalWork />
       <Schooling />

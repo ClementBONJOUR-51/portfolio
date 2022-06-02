@@ -24,14 +24,14 @@ function PersonalWork() {
                 backgroundRepeat: "no-repeat", backgroundSize: "cover"
             }}></div>
             <Container className="container text-center bg-white p-5" id='about' style={{ marginTop: "-100px", boxShadow: "0px 0px 80px 0.05px grey" }}>
-                <div id='personal_works' style={{ position: "absolute", marginTop: "-300px" }}></div>
+                <div id='personal_works' style={{ position: "absolute", marginTop: "-200px" }}></div>
                 <h1>Personal Works</h1>
                 <img src={img_line} alt="line" className="img-fluid mb-5" />
                 <Row className='my-4'>
                     <Col className='px-2'>
                         <FlipCard title={"Map generation"} img_front={img_bruit}>
                             <Row>
-                                <Col> <a className='btn rounded-0 p-3 text-uppercase fw-bold' style={{ backgroundColor: "#212121", color: "white" }} href="https://clementbonjour-51.github.io/MapGen/map.html" target="_blank">DEMO</a></Col>
+                                <Col> <a className='btn rounded-0 p-3 text-uppercase fw-bold' style={{ backgroundColor: "#212121", color: "white" }} href="https://clementbonjour-51.github.io/MapGen/map.html" target="_blank" rel="noopener noreferrer">DEMO</a></Col>
                                 <Col><ModalPerlin /></Col>
                             </Row>
 
@@ -39,13 +39,13 @@ function PersonalWork() {
                     </Col>
                     <Col className='px-2'>
                         <FlipCard title={"Endless animated landscape"} img_front={img_rain}>
-                            <a className='btn rounded-0 p-3 text-uppercase fw-bold' style={{ backgroundColor: "#212121", color: "white" }} href="https://clementbonjour-51.github.io/rain/rain.html" target="_blank">DEMO</a>
+                            <a className='btn rounded-0 p-3 text-uppercase fw-bold' style={{ backgroundColor: "#212121", color: "white" }} href="https://clementbonjour-51.github.io/rain/rain.html" target="_blank" rel="noopener noreferrer">DEMO</a>
                         </FlipCard>
                     </Col>
                     <Col className='px-2'>
                         <FlipCard title={"Generating a Labyrinth"} img_front={img_lab}>
                             <Row>
-                                <Col> <a className='btn rounded-0 p-3 text-uppercase fw-bold' style={{ backgroundColor: "#212121", color: "white" }} href="https://clementbonjour-51.github.io/maze/index.html" target="_blank">DEMO</a></Col>
+                                <Col> <a className='btn rounded-0 p-3 text-uppercase fw-bold' style={{ backgroundColor: "#212121", color: "white" }} href="https://clementbonjour-51.github.io/maze/index.html" target="_blank" rel="noopener noreferrer">DEMO</a></Col>
                                 <Col><ModalMaze /></Col>
                             </Row>
 
@@ -54,7 +54,7 @@ function PersonalWork() {
                     <Col className='px-2'>
                         <FlipCard title={"Joystick-mouse movement"} img_front={img_aqua}>
                             <Row>
-                                <Col><a className='btn rounded-0 p-3 text-uppercase fw-bold' style={{ backgroundColor: "#212121", color: "white" }} href="https://clementbonjour-51.github.io/webjoystick/aqua.html" target="_blank">DEMO</a></Col>
+                                <Col><a className='btn rounded-0 p-3 text-uppercase fw-bold' style={{ backgroundColor: "#212121", color: "white" }} href="https://clementbonjour-51.github.io/webjoystick/aqua.html" target="_blank" rel="noopener noreferrer">DEMO</a></Col>
                                 <Col><ModalJoystick /></Col>
                             </Row>
 

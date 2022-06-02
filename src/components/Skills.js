@@ -19,8 +19,8 @@ function Skills() {
                 backgroundAttachment: "fixed", backgroundPosition: "center",
                 backgroundRepeat: "no-repeat", backgroundSize: "cover"
             }}></div>
-            <Container className="container text-center bg-white p-5" id='skills' style={{ marginTop: "-100px", boxShadow: "0px 0px 80px 0.05px grey" }}>
-                <div id='skills' style={{ position: "absolute", marginTop: "-300px" }}></div>
+            <Container className="container text-center bg-white p-5" style={{ marginTop: "-100px", boxShadow: "0px 0px 80px 0.05px grey" }}>
+                <div id='skills' style={{ position: "absolute", marginTop: "-100px" }}></div>
                 <h1>Skills</h1>
                 <img src={img_line} alt="line" className="img-fluid mb-5" />
                 <Row className='my-5'>
