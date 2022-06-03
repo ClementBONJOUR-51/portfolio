@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "6d5506c22d575af7a62d",
+    "revision": "9b0acccc8ce576bcf673",
     "url": "/portfolio/static/css/main.80e1e269.chunk.css"
   },
   {
-    "revision": "6d5506c22d575af7a62d",
-    "url": "/portfolio/static/js/main.21264528.chunk.js"
+    "revision": "9b0acccc8ce576bcf673",
+    "url": "/portfolio/static/js/main.8a6930ec.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "a7acc911f06a4ea58a3f",
+    "revision": "bdba18e7c6e3ad771920",
     "url": "/portfolio/static/css/2.4297a045.chunk.css"
   },
   {
-    "revision": "a7acc911f06a4ea58a3f",
-    "url": "/portfolio/static/js/2.2f408c5d.chunk.js"
+    "revision": "bdba18e7c6e3ad771920",
+    "url": "/portfolio/static/js/2.8aa7508f.chunk.js"
   },
   {
     "revision": "ff8fa44b76fbc12214bac67b765b931b",
@@ -72,7 +72,55 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/Traitementdonnees.62d923e7.jpg"
   },
   {
-    "revision": "ba829122616d44ca1b92eb25c5393824",
+    "revision": "2fa385d5e0d03b523d4c9c1ac0a286a7",
+    "url": "/portfolio/static/media/cmd.2fa385d5.png"
+  },
+  {
+    "revision": "448c51eef017151b5862e498305fa2b5",
+    "url": "/portfolio/static/media/logiciel.448c51ee.png"
+  },
+  {
+    "revision": "b651c15683c57efa0fa212803d16a8b6",
+    "url": "/portfolio/static/media/Image3.b651c156.png"
+  },
+  {
+    "revision": "63c9ea57b8e3465a179eae81f04dac63",
+    "url": "/portfolio/static/media/Image4.63c9ea57.png"
+  },
+  {
+    "revision": "5588148ea89b7b702992265c4559191f",
+    "url": "/portfolio/static/media/Image5.5588148e.png"
+  },
+  {
+    "revision": "e9dc96095c3bcfdefdf5e08978305668",
+    "url": "/portfolio/static/media/Image6.e9dc9609.png"
+  },
+  {
+    "revision": "72a56e1a61e4e901eee6925f1d4cd08d",
+    "url": "/portfolio/static/media/Image1.72a56e1a.png"
+  },
+  {
+    "revision": "89eb073aae7062ca65a0873b95ea0693",
+    "url": "/portfolio/static/media/Image2.89eb073a.png"
+  },
+  {
+    "revision": "32483fc8d4095f396eb8a3c235db3832",
+    "url": "/portfolio/static/media/Image3.32483fc8.png"
+  },
+  {
+    "revision": "6e60f2901e583f7781611b982b2c63b9",
+    "url": "/portfolio/static/media/Image4.6e60f290.png"
+  },
+  {
+    "revision": "653d8ddcfd5e77231187c20ddefd14c1",
+    "url": "/portfolio/static/media/Image5.653d8ddc.png"
+  },
+  {
+    "revision": "0f723439aaba1b54de3e92e8fd1b3d36",
+    "url": "/portfolio/static/media/Image6.0f723439.png"
+  },
+  {
+    "revision": "11fdfd3bae6c44682c700664db27a5f9",
     "url": "/portfolio/index.html"
   }
 ];
