@@ -57,7 +57,7 @@ function Schooling
                     iconStyle={{ background: '#E7BE00', color: '#fff', boxShadow: "0 0 0 4px #D6A416", width: '40px', height: '40px', marginLeft: '-20px' }}
                     icon={""}
                 >
-                    <h3 className="vertical-timeline-element-title" style={{ color: "#b3b3b3" }}>Brevet de fin de 2e cycle de Musique</h3>
+                    <h3 className="vertical-timeline-element-title" style={{ color: "#b3b3b3" }}>Certificate of end of 2nd cycle of music</h3>
                     <h5 className="vertical-timeline-element-subtitle">Conservatory | REIMS</h5>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement

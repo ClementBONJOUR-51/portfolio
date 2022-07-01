@@ -9,7 +9,7 @@ import Main from './screens/Main';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // basename='/portfolio'
-  <BrowserRouter>
+  <BrowserRouter basename='/portfolio'>
     <Routes>
       <Route path="/" element={<Main />} />
     </Routes>
