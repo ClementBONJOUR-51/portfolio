@@ -18,6 +18,17 @@ function About() {
                     <p style={{ textAlign: "start" }}>
                         Hello ! <span role="img" aria-label="hello">🖐</span> <br />
                         My name is Clément BONJOUR, student in engineering school<br />at the CESI school in Reims
+                        <br />
+                        <br />
+                        Passionate about innovation and new technologies, I like to learn about robotics, artificial intelligence and spaceflight. I am also a great lover of art, especially music, drawing through computer graphics and photography.
+                         <br />
+                        My pronounced taste for creation and aesthetics allows me to produce, as far as possible, meticulous work with the intention of always doing better.
+                        <br />
+                        I want to later become a team leader in IT because this field is changing every day and we never stop learning new things and above all, I like logical challenges.
+                        <br />
+                        Courteous and curious, do not hesitate to contact me to discuss, I would be delighted.
+                        <br />
+                        Good visit and good day to you 🙂.
                     </p>
                     <p style={{ textAlign: "start" }}>
                         <Button href="#resume" onClick={() => setCollapseCV(!CollapseCV)} className='rounded-0 p-3 text-uppercase fw-bold mt-3' style={{ backgroundColor: "#212121" }}>My resume</Button>
