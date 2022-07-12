@@ -25,11 +25,11 @@ function Contact() {
       <h1>Contact</h1>
       <img src={img_line} alt="line" className="img-fluid mb-5" />
       <Row className="m-4" style={{ height: "100px" }}>
-        <Col><ContactFlip url={"https://twitter.com/"} /></Col>
+//         <Col><ContactFlip url={"https://twitter.com/"} /></Col>
         <Col><ContactFlip url={"https://github.com/ClementBONJOUR-51"} /></Col>
         <Col><ContactFlip url={"https://www.facebook.com/clement.bonjour.9/"} /></Col>
         <Col><ContactFlip url={"https://www.linkedin.com/in/cl%C3%A9ment-bonjour-8b2994189/"} /></Col>
-        <Col><ContactFlip url={"https://www.discord.com/"} /></Col>
+//         <Col><ContactFlip url={"https://www.discord.com/"} /></Col>
         <Col><ContactFlip url={"mailto:bonjourclement51100@gmail.com"} /></Col>
       </Row>
     </Container>
