@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom"
 import { BrowserRouter } from "react-router-dom";
 
 import Main from './screens/Main';
+import Resume from './screens/Resume';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +13,7 @@ root.render(
   <BrowserRouter basename='/portfolio'>
     <Routes>
       <Route path="/" element={<Main />} />
+      <Route path="/resume" element={<Resume />} />
     </Routes>
   </BrowserRouter>
 );

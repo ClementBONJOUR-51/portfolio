@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Button, Collapse, Card, CardBody } from 'reactstrap';
 import img_line from '../assets/img/lines.svg';
-import cv from '../assets/CV.pdf'
+import cv from '../assets/Clement-BONJOUR_Resume.pdf'
 import imgProfil from '../assets/img/profil.png';
 
 function About() {
