@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "93fb2b96faa96d08c796",
+    "revision": "104fb4c242a02dcdc124",
     "url": "/portfolio/static/css/main.80e1e269.chunk.css"
   },
   {
-    "revision": "93fb2b96faa96d08c796",
-    "url": "/portfolio/static/js/main.e6e00f4c.chunk.js"
+    "revision": "104fb4c242a02dcdc124",
+    "url": "/portfolio/static/js/main.5dfc5cd3.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "50224ae40557f01cf71c",
+    "revision": "4fabf07987077539e2d1",
     "url": "/portfolio/static/css/2.4297a045.chunk.css"
   },
   {
-    "revision": "50224ae40557f01cf71c",
-    "url": "/portfolio/static/js/2.cf8ddbc0.chunk.js"
+    "revision": "4fabf07987077539e2d1",
+    "url": "/portfolio/static/js/2.bb692a39.chunk.js"
   },
   {
     "revision": "ff8fa44b76fbc12214bac67b765b931b",
@@ -26,6 +26,10 @@ self.__precacheManifest = [
   {
     "revision": "15f0b57733137e5ee25ee7810dc7ef80",
     "url": "/portfolio/static/media/bg_SPP.15f0b577.jpg"
+  },
+  {
+    "revision": "58d83fa544865c04afc5349287b9c05a",
+    "url": "/portfolio/static/media/Clement-BONJOUR_Resume.58d83fa5.pdf"
   },
   {
     "revision": "b2844aca6fc739a6c13fdf5483c6f47f",
@@ -38,10 +42,6 @@ self.__precacheManifest = [
   {
     "revision": "a6c2fc0e69d02a1efa9bad39208c0582",
     "url": "/portfolio/static/media/dev.a6c2fc0e.png"
-  },
-  {
-    "revision": "fc27277247e24006a9a76480c929b832",
-    "url": "/portfolio/static/media/CV.fc272772.pdf"
   },
   {
     "revision": "0945439903385ac63d40286dbcee0b84",
@@ -124,7 +124,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/Image6.0f723439.png"
   },
   {
-    "revision": "57a0e16a97586d74bebbfbed5974db6f",
+    "revision": "8e88082418c9cc5a865fdbf9988d1d9e",
     "url": "/portfolio/index.html"
   }
 ];
