@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import img_line from '../assets/img/lines.svg';
+import MultiLingualContent from '../utils/multilingualContent';
 
 function Internships() {
     return (
@@ -9,17 +10,17 @@ function Internships() {
                 <Col></Col>
                 <Col xs={8}>
                     <div id='internships' style={{ position: "absolute", marginTop: "-100px" }}></div>
-                    <h1>Internships</h1>
+                    <h1><MultiLingualContent contentID='Internships' /></h1>
                     <img src={img_line} alt="line" className="img-fluid mb-5" />
 
                     <h2>SNCF Réseau | DUT</h2>
-                    <p className='m-5'>Development of a web application for SNCF agents (intranet)</p>
-                    <Button color="danger rounded-0" style={{cursor:"no-drop"}}>CONFIDENTIAL PROJECT</Button>
+                    <p className='m-5'><MultiLingualContent contentID='describe_SNCF' /></p>
+                    <Button color="danger rounded-0" style={{ cursor: "no-drop" }}><MultiLingualContent contentID='CONFIDENTIAL_PROJECT' /></Button>
 
                     <hr className='m-5' />
 
                     <h2>MADARA | BTS</h2>
-                    <table class="table table-bordered">
+                    {/* <table class="table table-bordered">
                         <thead class="thead-dark">
                             <tr>
                                 <th scope="col">#</th>
@@ -94,11 +95,11 @@ function Internships() {
                                 </td>
                             </tr>
                         </tbody>
-                    </table>
+                    </table> */}
+                    <MultiLingualContent contentID='describe_MADARA' />
 
                     <hr className='m-5' />
 
-                    {/* <h2>SQUIRREL | Licence et CESI (A3)</h2> */}
                 </Col>
                 <Col></Col>
             </Row>

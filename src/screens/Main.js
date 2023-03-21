@@ -15,7 +15,7 @@ function Main() {
       <Home />
       <About />
       <Skills />
-      <Cesi />
+{/*       <Cesi /> */}
       <Internships />
       <PersonalWork />
       <Schooling />
