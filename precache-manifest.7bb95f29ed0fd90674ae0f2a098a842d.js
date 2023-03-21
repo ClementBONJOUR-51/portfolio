@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "104fb4c242a02dcdc124",
-    "url": "/portfolio/static/css/main.80e1e269.chunk.css"
+    "revision": "a98062e26da848d62d67",
+    "url": "/portfolio/static/css/main.f40970d0.chunk.css"
   },
   {
-    "revision": "104fb4c242a02dcdc124",
-    "url": "/portfolio/static/js/main.5dfc5cd3.chunk.js"
+    "revision": "a98062e26da848d62d67",
+    "url": "/portfolio/static/js/main.de9c25d5.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "4fabf07987077539e2d1",
-    "url": "/portfolio/static/css/2.4297a045.chunk.css"
+    "revision": "c262e3209c80ebd363d4",
+    "url": "/portfolio/static/css/2.13b7cc2a.chunk.css"
   },
   {
-    "revision": "4fabf07987077539e2d1",
-    "url": "/portfolio/static/js/2.bb692a39.chunk.js"
+    "revision": "c262e3209c80ebd363d4",
+    "url": "/portfolio/static/js/2.903a88d8.chunk.js"
   },
   {
     "revision": "ff8fa44b76fbc12214bac67b765b931b",
@@ -42,6 +42,14 @@ self.__precacheManifest = [
   {
     "revision": "a6c2fc0e69d02a1efa9bad39208c0582",
     "url": "/portfolio/static/media/dev.a6c2fc0e.png"
+  },
+  {
+    "revision": "2648a71ef9b89def5e13867461502ab5",
+    "url": "/portfolio/static/media/france.2648a71e.png"
+  },
+  {
+    "revision": "7ff5dacab96414cb75fff06a6be3064e",
+    "url": "/portfolio/static/media/royaume-uni.7ff5daca.png"
   },
   {
     "revision": "0945439903385ac63d40286dbcee0b84",
@@ -124,7 +132,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/Image6.0f723439.png"
   },
   {
-    "revision": "8e88082418c9cc5a865fdbf9988d1d9e",
+    "revision": "a873bee96d56942618ae3d1f8171ad57",
     "url": "/portfolio/index.html"
   }
 ];
