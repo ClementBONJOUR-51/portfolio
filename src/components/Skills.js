@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import img_line from '../assets/img/lines.svg';
-import img_bg_SPP from '../assets/img/bg_SPP.jpg';
+import img_bg_skill from '../assets/img/bg_skills.jpg';
 import MultiLingualContent from '../utils/multilingualContent';
 
 const ProgressBar = ({ value }) => {
@@ -16,7 +16,7 @@ function Skills() {
     return (
         <div>
             <div style={{
-                backgroundImage: `url(${img_bg_SPP})`, minHeight: "300px",
+                backgroundImage: `url(${img_bg_skill})`, minHeight: "300px",
                 backgroundAttachment: "fixed", backgroundPosition: "center",
                 backgroundRepeat: "no-repeat", backgroundSize: "cover"
             }}></div>

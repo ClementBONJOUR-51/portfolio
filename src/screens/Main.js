@@ -6,7 +6,7 @@ import Internships from '../components/Internships';
 import PersonalWork from '../components/PersonalWork';
 import Schooling from '../components/Schooling';
 import Contact from '../components/Contact';
-import Cesi from '../components/CESI';
+/* import Cesi from '../components/CESI'; */
 
 function Main() {
 

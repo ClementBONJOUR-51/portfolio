@@ -9,7 +9,7 @@ const LanguageButton = () => {
   const { language, toggleLanguage } = useContext(LanguageContext);
 
   return (
-      <Button className='btn btn-lg bg-light px-4 py-2' onClick={toggleLanguage}> {language=="en"?
+      <Button className='btn btn-lg bg-light px-4 py-2' onClick={toggleLanguage}> {language==="en"?
       <img src={flag_fr} alt="line" className="img-fluid" height={20} width={30} /> :
       <img src={flag_en} alt="line" className="img-fluid" height={20} width={30}/>}
       </Button>
