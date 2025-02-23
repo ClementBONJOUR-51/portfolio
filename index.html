@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio - Clément BONJOUR - Ingénieur développeur</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .work:hover {
+            transform: scale(1.03);
+            /* Agrandissement à 105% */
+            transition: transform 0.2s ease;
+            /* Animation fluide */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            /* Sombre l'image de fond */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .work:hover .overlay {
+            opacity: 1;
+        }
+
+        .discover-btn {
+            background-color: #ffffff;
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Clément</span> BONJOUR</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Accueil</a>
+                <a href="#about" class="nav-item nav-link">À propos</a>
+                <a href="#qualification" class="nav-item nav-link">Profil</a>
+                <a href="#skill" class="nav-item nav-link">Compétence</a>
+                <!-- <a href="#service" class="nav-item nav-link">Service</a> -->
+                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                <!-- <a href="#testimonial" class="nav-item nav-link">Review</a> -->
+                <!-- <a href="#blog" class="nav-item nav-link">Blog</a> -->
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <!-- <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a> -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <div class="rounded-circle overflow-hidden shadow-sm" style="width: 300px; height: 300px;">
+                        <img class="img-fluid w-100 h-100" src="img/profile.jpg" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-8 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">Je suis</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2 outline-white">
+                        Clément BONJOUR</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Ingénieur logiciel, Développeur Web, Développeur Front End & Back
+                        End, Développeur Full Stack, Développeur d'applications</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="./img/CV_Clement_BONJOUR_2024_2.pdf" target="_blank" class="btn btn-outline-light mr-5">Télécharge mon
+                            CV</a>
+                        <!-- <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                            <span></span>
+                        </button> -->
+                        <!-- <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white outline-grey">À propos</h1>
+                <h1 class="position-absolute text-uppercase text-primary">À propos de moi</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7" style="text-align: justify;">
+                    <h3 class="mb-4">Ingénieur Logiciel / Dev Full-Stack</br>
+                        <small>Développement d'application web/mobile/logiciel</small></br>
+                    </h3>
+                    <p>Je m'appelle Clément BONJOUR, récemment
+                        diplômé en tant qu'ingénieur spécialisé en
+                        informatique de l'école CESI de Reims, et titulaire
+                        d'une licence professionnelle en développement
+                        full-stack.</p>
+                    <p>Passionné et avide d'apprendre, je
+                        m'intéresse particulièrement à l'innovation
+                        technologique sous toutes ses formes, de
+                        l’algorithmie à l’aérospatial. En parallèle, je suis un
+                        grand amateur d'art, notamment de musique et
+                        de photographie. Courtois et curieux, je serais ravi
+                        de discuter et d’échanger avec vous. N'hésitez pas
+                        à me contacter 🙂</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2">
+                            <h6>Nom: <span class="text-secondary">Clément BONJOUR</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>Anniversaire: <span class="text-secondary">27 août 1999</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>Étude: <span class="text-secondary">Bac +5 [ing. info.]</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>Expérience: <span class="text-secondary">1 an</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>Email: <span class="text-secondary"><a
+                                        href="mailto:bonjour.clement.pro@gmail.com">bonjour.clement.pro@gmail.com</a></span>
+                            </h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>Address: <span class="text-secondary">51100 Reims</span></h6>
+                        </div>
+                    </div>
+                    <!-- <a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
+                    <a href="" class="btn btn-outline-primary">Learn More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white outline-grey">Mon Profil
+                </h1>
+                <h1 class="position-absolute text-uppercase text-primary">Éducation et expérience</h1>
+            </div>
+            <div class="row align-items-top">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Mon Éducation</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Ingénierie Informatique</h5>
+                            <p class="mb-2"><strong>École d’ingénieurs - CESI</strong> | <small>2021 - 2024</small> |
+                                <small><u>Diplomé</u></small>
+                            </p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos
+                                ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum
+                                stet lorem diam</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Licence Professionnelle WIMSI</h5>
+                            <p class="mb-2"><strong>IUT Reims-Châlons Charleville</strong> | <small>2020 - 2021</small>
+                                | <small><u>Diplomé</u></small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos
+                                ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum
+                                stet lorem diam</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">BTS Informatique</h5>
+                            <p class="mb-2"><strong>CNED</strong> | <small>2019 - 2020</small> |
+                                <small><u>Diplomé</u></small>
+                            </p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos
+                                ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum
+                                stet lorem diam</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">DUT Informatique</h5>
+                            <p class="mb-2"><strong>IUT Reims-Châlons Charleville</strong> | <small>2017 - 2019</small>
+                                | <small><u>Diplomé</u></small></p>
+                            <p>J'ai acquis des bases solides en programmation (orienté objet), algorithmique, conception
+                                d'application web, bases de données et
+                                réseaux, avec un accent sur la résolution de problèmes techniques complexes.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Baccalauréat - STI2D</h5>
+                            <p class="mb-2"><strong>Lycée Franklin-Roosevelt</strong> | <small>2016 - 2017</small> |
+                                <small><u>Diplomé</u></small>
+                            </p>
+                            <p>Baccalauréat Sciences et Technologies de l'Industrie et du Développement Durable, avec un
+                                intérêt particulier pour la conception des systèmes numériques et l'automatisation.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">C.E.M</h5>
+                            <p class="mb-2"><strong>Conservatoire de Reims</strong> | <small>2010 - 2020</small> |
+                                <small><u>Diplomé</u></small>
+                            </p>
+                            <p>Formation musicale au Conservatoire de Reims (trompette & solfège), où j'ai développé une
+                                discipline rigoureuse
+                                et une appréciation de la musique, enrichissant ainsi mon approche créative et
+                                méthodique.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Mes Expériences</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold">CDI | Agent de maîtrise - Développeur</h5>
+                            <p class="mb-2"><strong><a href="https://www.foyer-remois.fr/">Le Foyer Rémois</a></strong>
+                                |
+                                <small>Fev. 2025 (en cours)</small> | <small> Siège Social, Reims</small>
+                            </p>
+                            <ul style="font-size: 12px;">
+                                <li>Conception et développement de programmes dans le respect des normes et standards en
+                                    vigueur.</li>
+                                <li>Mise en place de tests et validation des programmes en collaboration avec les
+                                    utilisateurs.</li>
+                                <li>Maintenance et évolution des programmes développés.</li>
+                                <li>Participation au conseil et à l'assistance des utilisateurs des systèmes
+                                    d'information.</li>
+                                <li>Rédaction de notices d’installation, d’exploitation et de guides d’utilisation.</li>
+                                <li>Contribution à l’étude et à la mise en place de solutions techniques ou progicielles
+                                    en collaboration avec les prestataires internes et externes.</li>
+                                <li>Surveillance du bon fonctionnement des chaînes de traitement d’exploitation et
+                                    contrôle quotidien des rapports d’exécution.</li>
+                                <li>Support technique de niveau 2 auprès des utilisateurs sur les programmes développés
+                                    et sur les solutions applicatives couvrant l’ensemble des domaines fonctionnels du
+                                    système d’information, en collaboration avec les techniciens support.</li>
+                            </ul>
+
+
+                            <p class="font-weight-bold mb-1">PHP (Laravel) - Javascript - C# - SQL - Talend - Docker
+                            </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold">Stage de fin d’étude | Ingénieur Logiciel</h5>
+                            <p class="mb-2"><strong><a
+                                        href="https://www.axon-cable.com/fr/accueil">AXON’CABLE</a></strong> |
+                                <small>2024 (6 mois)</small> | <small> Bezannes, France</small>
+                            </p>
+                            <p>Management de projet & développement : Conception et développement d'une application
+                                d'édition de documents texte adaptée aux besoins des rédacteurs d’Axon’. Supervision de
+                                plusieurs
+                                autres stagiaires sur ce projet et d'autres projets, avec transmission et partage de
+                                connaissances.</p>
+                            <p class="font-weight-bold mb-1">C# - WCF & EF - WPF & Material Design - MS SQL SERVER - XML
+                            </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold">Stage International | Ingénieur Logiciel</h5>
+                            <p class="mb-2"><strong><a href="https://www.storiogroup.com/">Albelli x
+                                        Photobox</a></strong> | <small>2022 - 2023 (4 mois)</small> | <small> Amsterdam,
+                                    Pays-Bas</small></p>
+                            <p>4 mois à Amsterdam chez ALBELLI : Refonte du blog avec modernisation de l’architecture
+                                logicielle,
+                                alignant les ressources technologiques avec les objectifs stratégiques de leader
+                                européen.</p>
+                            <p class="font-weight-bold mb-1">HEADLESS CMS - SEO & ISR - LOAD BALANCER - AWS/TERRAFORM
+                            </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold">Alternance - Développeur Web</h5>
+                            <p class="mb-2"><strong><a href="https://www.squirrel.fr/">SQUIRREL</a></strong> |
+                                <small>2020 - 2021 (1 an)</small> | <small> Reims, France</small>
+                            </p>
+                            <p>Alternance d’un an chez SQUIRREL en tant que technicien développeur : Participation à des
+                                projets
+                                pour des clients majeurs (BNP, Daunat, Bayer, etc.), renforçant mon sens de
+                                l'organisation et ma
+                                rigueur dans la gestion de projets.</p>
+                            <p class="font-weight-bold mb-1">NoSQL - REACT.JS - GOLANG - GRAPHQL - SERVICES DE PAIEMENT
+                            </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold">Stage BTS - Développeur Web</h5>
+                            <p class="mb-2"><strong>MADARA</strong> | <small>2020 (4 mois)</small> | <small> Reims,
+                                    France</small></p>
+                            <p>Création et maintenance d’application web en explorant React.Js.</p>
+                            <p class="font-weight-bold mb-1">REACT.JS - DOCKER - GIT- POSTMAN</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold">Stage DUT - Développeur Web</h5>
+                            <p class="mb-2"><strong><a href="https://www.sncf-reseau.com/fr">SNCF Réseaux</a></strong> |
+                                <small>2019 (2 mois)</small> | <small> Reims, France</small>
+                            </p>
+                            <p>Conception d’une application web interne en PHP</p>
+                            <p class="font-weight-bold mb-1">GIT - CALL API - PHPMyAdmin - HTML/CSS/JS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white outline-grey">Compétences
+                </h1>
+                <h1 class="position-absolute text-uppercase text-primary">Mes Compétences</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold">Avancé</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CSS</h6>
+                            <h6 class="font-weight-bold">Avancé</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">PHP</h6>
+                            <h6 class="font-weight-bold">Compétent</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="66" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Windev</h6>
+                            <h6 class="font-weight-bold">Fondamentaux</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar warning" role="progressbar" aria-valuenow="33" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript</h6>
+                            <h6 class="font-weight-bold">Avancé</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">SQL</h6>
+                            <h6 class="font-weight-bold">Avancé</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Java</h6>
+                            <h6 class="font-weight-bold">Compétent</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="66" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Python</h6>
+                            <h6 class="font-weight-bold">Compétent</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="66" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <i class="fa fa-1x fa-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Langages de programmation</h4>
+                    </div>
+                    <p>Javascript - C# - Java - PHP - Python</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <i class="fa fa-1x fa-database service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Bases de données</h4>
+                    </div>
+                    <p>SQL/NoSQL - Modélisation de BDD</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <i class="fa fa-1x fa-code-branch service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Systèmes de contrôle de version</h4>
+                    </div>
+                    <p>Git avec GitHub</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <i class="fa fa-1x fa-globe service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Développement web</h4>
+                    </div>
+                    <p>HTML/CSS - Javascript - React.Js/Native</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <i class="fa fa-1x fa-project-diagram service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Architectures logicielles</h4>
+                    </div>
+                    <p>REST/GraphQL - Services</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <i class="fa fa-1x fa-shield-alt service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Bonnes pratiques de sécurité</h4>
+                    </div>
+                    <p>Injection - XSS - OAuth/JWT</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <i class="fa fa-1x fa-tools service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Débogage et résolution</h4>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <i class="fa fa-1x fa-sync-alt service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Pratiques DevOps</h4>
+                    </div>
+                    <p>Docker - pipelines - tests automatisés</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <i class="fa fa-1x fa-book-open service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Rédaction et apprentissage</h4>
+                    </div>
+                    <p>Documentation, rédaction technique et apprentissage autonome</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <i class="fa fa-1x fa-comments service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Communication</h4>
+                    </div>
+                    <p>travailler efficacement en équipe</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <i class="fa fa-1x fa-tachometer-alt service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Optimisation de performance</h4>
+                    </div>
+                    <p>SEO - CSR/SSR/SSG/ISR - LoadBalancing</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <i class="fa fa-1x fa-tasks service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Gestion de projet et d'équipe</h4>
+                    </div>
+                    <p>WBS - Gantt - AMDEC - MoSCow</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skill End -->
+
+
+    <!-- Services Start -->
+    <!-- <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Services</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Design</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Development</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Apps Design</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Apps Development</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">SEO</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Content Creating</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Services End -->
+
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white outline-grey">Travaux</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Mes explorations scientifiques personnelles
+                </h1>
+            </div>
+            <div class="row mb-4">
+                <!-- Colonne pour l'image -->
+                <div class="col-lg-4 col-md-6 mb-4 mt-4 portfolio-item second">
+                    <div class="work position-relative mb-2" style="cursor: pointer">
+                        <a href="https://codepen.io/ClementBONJOUR-51/full/XWBEQpW" target="_blank">
+                            <img class="img-fluid rounded w-100" src="img/Flocking.jpg" alt="">
+                            <div class="overlay">
+                                <span class="discover-btn">
+                                    <i class="fa fa-search"></i>&nbsp;
+                                    Découvrir</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Colonne pour le texte -->
+                <div class="col-lg-8 mb-4" style="text-align: justify;">
+                    <h5>Simulation 2D - Essaim de drones</h5>
+                    <small>
+                        <p>Ce projet a débuté comme un exercice de rédaction d'article scientifique durant mes études,
+                            pour lequel j'ai choisi
+                            d'explorer le thème de l’<b>optimisation du temps de recherche d’une cible statique dans un
+                                espace inconnu par un essaim de drones.</b>
+                            À l'image des chauves-souris qui se déplacent grâce à l’<u>écholocalisation</u> en émettant
+                            des
+                            ultrasons pour repérer les obstacles environnants, ou des fourmis qui tracent le chemin le
+                            plus court vers une source de nourriture en déposant des <u>phéromones</u>, ce projet
+                            s’inspire de
+                            l’éthologie – l’étude du comportement des animaux dans leur environnement naturel.
+                            Cette science est couramment appliquée en algorithmique pour résoudre des défis du
+                            quotidien,
+                            comme se déplacer dans un espace inconnu ou atteindre un objectif de manière autonome.
+                            Dans ce projet, je me suis inspiré des travaux de <a
+                                href="https://fr.wikipedia.org/wiki/Craig_Reynolds">Craig Reynolds</a>, qui a modélisé
+                            en 1986
+                            les
+                            vols synchronisés d’oiseaux sous forme de programme informatique avec son algorithme des "<a
+                                href="https://fr.wikipedia.org/wiki/Boids">boids</a>".
+                            Ces "boids" évoluent en groupe en maintenant une distance égale entre eux et en suivant des
+                            règles de cohésion, de séparation et d’alignement, ce qui évoque pour moi une battue, comme
+                            celles que l'on organise pour des recherches en forêt.
+                            Mon idée est donc d’explorer une solution qui combinerait l'algorithme de <a
+                                href="https://youtu.be/86iQiV3-3IA">flocking</a>
+                            (synchronisation en essaim) et des techniques de traitement d’image pour trouver une cible
+                            dans
+                            un espace inconnu et rempli d’obstacles.
+                            Le procédé consiste d’abord à quadriller l’espace de recherche en grandes zones. À mesure
+                            que
+                            les drones explorent et cartographient l’environnement, l’espace est progressivement divisé
+                            en
+                            sections plus petites.
+                            Ce processus de subdivision permet de focaliser la recherche dans des zones d’intérêt grâce
+                            à une force attractive,
+                            notamment celles encore peu explorées, ce qui augmente l'efficacité et cherche a réduire le
+                            temps de recherche.
+                        </p>
+                        <a class="btn btn-primary py-2 btn-notification" target="_blank"
+                            href="https://codepen.io/ClementBONJOUR-51/full/XWBEQpW">
+                            Découvrir le résultat
+                        </a>
+                    </small>
+                </div>
+            </div>
+
+            <!-- <div class=" row">
+                    <div class="col-12 text-center mb-2">
+                        <ul class="list-inline mb-4" id="portfolio-flters">
+                            <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">All</li>
+                            <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Design</li>
+                            <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Development</li>
+                            <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Marketing</li>
+                        </ul>
+                    </div>
+                </div> -->
+
+            <hr />
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="work position-relative mb-2">
+                        <a href="https://codepen.io/ClementBONJOUR-51/full/yLmxbvj" target="_blank">
+                            <img class="img-fluid rounded w-100" src="img/Perlin.png" alt="">
+                            <div class="overlay">
+                                <span class="discover-btn">
+                                    <i class="fa fa-search"></i>&nbsp;
+                                    Génération de carte
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="work position-relative mb-2" style="cursor: pointer">
+                        <a href="https://clementbonjour-51.github.io/maze/index.html?size=100&scale=10" target="_blank">
+                            <img class="img-fluid rounded w-100" src="img/Maze.png" alt="">
+                            <div class="overlay">
+                                <span class="discover-btn">
+                                    <i class="fa fa-search"></i>&nbsp;
+                                    Génération de labyrinthe</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="work position-relative mb-2" style="cursor: pointer">
+                        <a href="https://clementbonjour-51.github.io/rain/rain.html" target="_blank">
+                            <img class="img-fluid rounded w-100" src="img/rain.jpg" alt="">
+                            <div class="overlay">
+                                <span class="discover-btn">
+                                    <i class="fa fa-search"></i>&nbsp;
+                                    Web-art interactif : La pluie</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="work position-relative mb-2" style="cursor: pointer">
+                        <a href="https://clementbonjour-51.github.io/gamejam/" target="_blank">
+                            <img class="img-fluid rounded w-100" src="img/keepitalive.jpg" alt="">
+                            <div class="overlay">
+                                <span class="discover-btn">
+                                    <i class="fa fa-search"></i>&nbsp;
+                                    Game Jam : "Keep it alive"</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+
+    <!-- Testimonial Start -->
+    <!-- <div class="container-fluid py-5" id="testimonial">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Review</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Clients Say</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Testimonial End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid pt-5" id="blog">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white outline-grey">Intérêt
+                </h1>
+                <h1 class="position-absolute text-uppercase text-primary">Centre d'intérêt</h1>
+            </div>
+
+            <div class="row">
+                <div class="col mb-2">
+                    <hr class="h-100" />
+                </div>
+                <div class="col-auto mb-2">
+                    <i class="fa fa-bookmark text-dark"></i>
+                </div>
+                <div class="col mb-2">
+                    <hr class="h-100" />
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">oct</h4>
+                            <small class="text-white text-uppercase">2024</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">SpaceX réussit l'incroyable en récupérant en vol son
+                        propulseur
+                        géant</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" target="_blank"
+                        href="https://www.space.com/spacex-starship-flight-5-launch-super-heavy-booster-catch-success-video">Lire</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">nov</h4>
+                            <small class="text-white text-uppercase">2023</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Star Citizen sort son moteur de jeu "StarEngine"</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" target="_blank"
+                        href="https://www.tomshardware.fr/star-citizen-sort-le-grand-jeu-en-video-le-moteur-starengine-mis-a-lhonneur/">Lire</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
+                        <div class="blog-date bg-dark">
+                            <h4 class="font-weight-bold mb-n1 text-primary">oct</h4>
+                            <small class="text-white text-uppercase">2024</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Adobe présente son outil de rotation 3D pour dessins en 2D
+                    </h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" target="_blank"
+                        href="https://arstechnica.com/ai/2024/10/adobe-shows-off-3d-rotation-tool-for-flat-drawings/">Lire</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col mb-2">
+                    <hr class="h-100" />
+                </div>
+                <div class="col-auto mb-2">
+                    <i class="fa fa-music text-dark"></i>
+                </div>
+                <div class="col mb-2">
+                    <hr class="h-100" />
+                </div>
+            </div>
+
+
+            <!-- Musiques -->
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-lg-2 mb-2">
+                    <div class="card bg-dark m-2 h-100 d-flex flex-column">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <a href="https://youtu.be/SRXH9AbT280" target="_blank">
+                                <img class="card-img-top"
+                                    src="https://i.ytimg.com/vi/SRXH9AbT280/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBd5OlOgkV_Lu4JcQIgPmlQ6TlQVw"
+                                    alt="The Emptiness Machine - Linkin Park" style="object-fit: cover;">
+                            </a>
+                        </div>
+                        <div class="card-body text-center d-flex flex-column justify-content-center py-1">
+
+                            <p class="h6 font-weight-bold" style="white-space: normal;"><a class="text-white"
+                                    href="https://youtu.be/SRXH9AbT280" target="_blank">The Emptiness Machine</a>
+                            </p>
+                            <p class="text-light m-0"><small>Linkin Park</small></p>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="https://youtu.be/SRXH9AbT280" class="btn btn-outline-primary btn-sm btn-block"
+                                target="_blank"><i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+
+                <!-- Card 2 -->
+                <div class="col-lg-2 mb-2">
+                    <div class="card bg-dark m-2 h-100 d-flex flex-column">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <a href="https://youtu.be/ZAPvZNgPfDE?list=RDZAPvZNgPfDE" target="_blank">
+                                <img class="card-img-top"
+                                    src="https://i.ytimg.com/vi/ZAPvZNgPfDE/hqdefault.jpg?sqp=-oaymwExCOADEI4CSFryq4qpAyMIARUAAIhCGAHwAQH4Ab4HgALQBYoCDAgAEAEYciBhKDowDw==&rs=AOn4CLBhCnP2nb24QGoRv_HKACG8TMSHqQ"
+                                    alt="The Emptiness Machine - Linkin Park" style="object-fit: cover;">
+                            </a>
+                        </div>
+                        <div class="card-body text-center d-flex flex-column justify-content-center py-1">
+
+                            <p class="h6 font-weight-bold text-white"><a class="text-white"
+                                    href="https://youtu.be/ZAPvZNgPfDE?list=RDZAPvZNgPfDE" target="_blank">MELODY
+                                    X</a>
+                            </p>
+                            <p class="text-light m-0"><small>BONAPARTE</small></p>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="https://youtu.be/ZAPvZNgPfDE?list=RDZAPvZNgPfDE"
+                                class="btn btn-outline-primary btn-sm btn-block" target="_blank"><i
+                                    class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+
+                <!-- Card 3 -->
+                <div class="col-lg-2 mb-2">
+                    <div class="card bg-dark m-2 h-100 d-flex flex-column">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <a href="https://youtu.be/gy5t5pPa0SE" target="_blank">
+                                <img class="card-img-top"
+                                    src="https://i.ytimg.com/vi/tbNlMtqrYS0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLClOEnXGuMDqRprVVG_Rscie6P5lw"
+                                    alt="The Emptiness Machine - Linkin Park" style="object-fit: cover;">
+                            </a>
+                        </div>
+                        <div class="card-body text-center d-flex flex-column justify-content-center py-1">
+
+                            <p class="h6 font-weight-bold text-white"><a class="text-white"
+                                    href="https://youtu.be/gy5t5pPa0SE" target="_blank">I'm Gonna Be</a></p>
+                            <p class="text-light m-0"><small>the proclaimers</small></p>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="https://youtu.be/gy5t5pPa0SE" class="btn btn-outline-primary btn-sm btn-block"
+                                target="_blank"><i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+
+                <!-- Card 4 -->
+                <div class="col-lg-2 mb-2">
+                    <div class="card bg-dark m-2 h-100 d-flex flex-column">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <a href="https://youtu.be/l_dGqLzOnhA" target="_blank">
+                                <img class="card-img-top"
+                                    src="https://i.ytimg.com/vi/l_dGqLzOnhA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD2fGrp3pn4q-bfSnHdGKX5KHptaw"
+                                    alt="The Emptiness Machine - Linkin Park" style="object-fit: cover;">
+                            </a>
+                        </div>
+                        <div class="card-body text-center d-flex flex-column justify-content-center py-1">
+
+                            <p class="h6 font-weight-bold text-white"><a class="text-white"
+                                    href="https://youtu.be/l_dGqLzOnhA" target="_blank">I Am the Antichrist to
+                                    You</a>
+                            </p>
+                            <p class="text-light m-0"><small>Nu Deco</small></p>
+
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="https://youtu.be/l_dGqLzOnhA" class="btn btn-outline-primary btn-sm btn-block"
+                                target="_blank"><i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+
+                <!-- Card 5 -->
+                <div class="col-lg-2 mb-2">
+                    <div class="card bg-dark m-2 h-100 d-flex flex-column">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <a href="https://youtu.be/cE6wxDqdOV0" target="_blank">
+                                <img class="card-img-top"
+                                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCADqAX8DASIAAhEBAxEB/8QAHAAAAQUBAQEAAAAAAAAAAAAAAAIDBAUGAQcI/8QASxAAAQMCBAIGBAsGAwYHAQAAAQACAwQRBRIhMUFRBhMiYXGBBzJ0kRQ1NkJScnWhsbKzIzNiwdHwJCXhFSY0gpKiFkNTVGRz8UT/xAAaAQACAwEBAAAAAAAAAAAAAAACAwABBAUG/8QAKBEAAgIBBAIDAAICAwAAAAAAAAECEQMSITEyBEETIlEFFDNhI0JS/9oADAMBAAIRAxEAPwDydCEKEPafR0SOjFPb/wB9Xfmatfmdz5rH+jv5MU/ttb+Zq14WqPCOfk7MWC4nfklXPNIF0rVRgDrXO5pxrnc+KaCcbdCy0O5nc/79y5d3NCEAQXdzKqKkuE8ovu4ferdVNV/xE3/L+COIMhp19ST3JJLtB3BKI0vysuHgiKQm511SS51hrtdK/wBUkg28rKmXRy55rhJ5oO6SdiqLAk81wk6drkhJ5Ki6O3Ouq5c23RwK4oQ6L80E964Nz5rmqogEnmk3cgkDXTQ2VdiuL0WEQdfUXc86QwNNnvPf3c1QSQ7U1UcDSXva22t3ENA8SVDdjOH5AfhEYOzmhwvf+i84xDGq3EZ5JJZCGucS2NujG8gAorJnX1B33ulydD44b5PUxjOEj1q6AAgWOcaHkbJqXpDgcWhrWOuf/KY9/wCAXnYBdqOP3JTXAPa17bpfyfga8dfpvmdIcGkdZs8o/idEQ3+qsYamGcXilY8b9k3I8RuvN2taHZmcTpfZSGVM8DmyxSvaWnUtNnMP9ESyXyVLx/xnohOm64SeZVNhmNRVbWRTkMqDYA/Mk7weauLpqd8GVxa2YXPNJJdzXVxQEQSUi55pZukFUyxJJSSTzXSklCQQ4nVYTpjriNH7Az9SRbsrB9MfjGj9hZ+pIqG4uTNoQhQ1ghCFCAjRCFCAhCFCHtHo6+TFP7dW/matfosj6OvkxTe2135mrXgLVHqjn5OzFBKASQEsIqFignWJoJ1m6CQSHFxdQlDAVTVi1RL3hitraXVXWD/EH6rUzGBIYtdpPK39Ek2N0o7O8B+KTYBo701oE5ZJPH3JS5bQnvsqoJCSDe6S625tfZKcdwNAkH+/NU0WIuuHQjwQQuH+SCiBqjxXLgLhOn+qosVsSkl1rDidQkl/C4v4hZjH8bELHQUz2mYtDXva67Yzy04qm6GRi5M5jnSWCkjEdKRNUtcc9wckVrjzWIq6+pxOR008hMhsBfYAcAkSseQ4uuS43cd7Fcjj2HEclnlks1wxJckV9NOLuy3A4hOUoBc1p0N7DS9+5W8ML2tv1gykbEC91HdJEyVrnNaDf1gANkGr0M0VwLuIr5gNCNE0ZYnOAuNToVErah5e7gCoXXO011BurUSN0XmYBpy7NNvBEj3BoeNTrfvHIqupp3F99wbZh3qUx7nMe07B5t4bq9ItyJEL3DI4HsmxYRobHv5rbYLiHwunySn9tEcjifnAbFYOjdeBgvcNkkA8L6K5wepdDVEX7L7E357JkdmJmtSNyUkhDCHta4bELpCYZRBTZTpTZCogg8UkpZSCqZY2dlhOmHxlR+ws/UkW8csH0xH+Y0fsDP1ZENDMXJmkIQqNYIQhQgIQhQgIQhQh7T6OvkxT+3Vv5mrYW1WQ9HPyYp/bq38zVsOS1w6o5+TszoSwElLCIA6AnGBIFk43ZLkXyxdkLoRolD6BVdaP29+bAfcVaKurheVh/gt990ePkCaItra9xSSLg353Sz/VcKcLEkbd4STyHDUpZ38NEk6eaotDR3KQU6U07/8AVCxCSTYEoceSQ6x496Flo4TomnmzXHSwGpcbWXXODdTruqPGMSMcRjYcpdcE8XJcnW4yEXJ7FLjGJSSzSRxueyIHKGtcQXd5KoX3cC3mcwv3KQWPnc6Rx7IPZPFxG5QWNNtQMu3eFjlKzoxgooZjilcRxGnrcu9OOhhheQbZXNuO5yjTYg2MvZpcWB7vBRXVj3nV1wdtfxVJNl2iZU1FgGtNiBuFWyS5wWv8nDgnO049mRr765TqPJDaV8rrBhBv806JiSXILt8EeUueyO5uQLX5hNxwSSvDW2uePBXkOCVTgLtOtuF1d0fRp9g4g6eNtVNaRaxNmRYx8Di0gFw1PLROOnAblaNTckjmVqqzo5UMOjMwI9ZoVZJ0fqBmIa7QX2tsq+VFSwMr6cFkTW8Td3vUynLmPa4XzA3CYZTyQPcx4Nxvm/kplNGXSAkgNBuSmJ2InHSjeUL+spad3EsBPipBGqg4aRHSROdcB2Zzb/R4KcC1wDgbg7EbJpjYkhIITpTZUKEFNu4J02TbrXVEGiN1g+mPxjR+wM/VkW+NlgumemJUfsLP1JELGYuTMoQhCawQhChAQhChAQhChEe1ejn5MU/ttd+Zq2Cx/o5+TMB/+bXfmatiNwtcOqOfk7MUEoJPFK5K2ALCcbbRNjdOBKkwlyOIXEJY8FArvXZ9UqeoNZ+8aObCPvTIcgT4Iltz3Bctsl8LLlri6eLGzue/VJKcN/xSN9OWqosQeKZI05738k8dj4ph3HvVFjZ2Nt7JpxAt4Jx+x8FGkcdAN9FTLRFrahkEUkjybNB9/ALF1L5amZ8ktwDcMZ9Fvf3lXOLVPXTGJusUBIdydINyqh1zr3796w5Z26Ol48KVjTiGs2ADdAFCkzFrnDhfwUyYtY2x1AB95TEkRbS5tc7yHHwSVsaaso6ll3XFzew9UjVMx08j3HQ6b25Kxla59bHEdQHvcfAaKypqeJrzewa/a/4p+qkZ5Lcg0WH2kGYk6DTjqtlhuBMcA4sFrcd1W07II5mE2JuNFuqAB8UWXbS+izzkx+OCo5TYfBDGC2ME7knVSTG1o9UbcArFkbbAcLeSZljtdA0aVSIDhpZV88W5srNwsbKLM3dDRZlcRoY3guA7bQSCBuqulfBBK7rmsc1tjldoD3LTVjeyVi6+8da5pGjgMviU7HKjF5ELVmljxT4TkMWQMbJ1bmA7AjTVXVCS6C52zvy+F+CzGEUE0+YMAawEZ3nh4BbCKNkUccbNGsaAP9VsW5zMm2xy1wU2U8U2QiFCDZNlOlNkKiDbuKwPTP4yo/YGfqyLfkLAdNPjKj9gj/VkQsbi5MyhCEJqBCEKEBCEKEBCEKFo9q9HHyYg9trvzNWyCxvo5+TFN7dXfmatiFrh1Rz8nZi+SUEkFKCtgCxunG7ptu6W06lKZa5HEIQljzihVnrs8FOUGt9aNMhyDLgi8CunRviucCe+y6d/CyeLobOhSCln+/NJPHxVFjbuKYdfXuKfcmX5QMxPO/koQjyE8b2VbiE5p4HyXF7FrO9zhop73Et8QSFS4lIHSwsdYth/bFvN1rNBS8jpDcUbkUlSOrDIz6zmhz775nalMPbk6sG1spcuve6eqcb3DTbXi47oqiA6UW9VjY7DmN1zZcnWjsiFKesIAtxcfAC6XUtywttxbG231jdJA7ZAP/8AO97h35gEqrz9XE0aXkhPkNLKIIpJHlmISE8MwHmVNE5Ia5vzdFX1rXMrL/Sa0/ilPmysDG+sfWI2CY+BaVstqecyPDydnAac72XqOEQvjpKfOCHOaHWO+qw/RLBXTujratloYnA07HfPkGvWEchwXo7C0AEkAcCSAPC5SJbs0R4JDdvJNyjRNOxDD4iWvq6dpA1Bkbp96T8LpZReOaN4/gc134FFWwQ09o1NlEmG/mppcCDZQZ3Bt+dzZA0WiqqmXa7msTj46uandxdcDyWqxXF8MomlsszTLwjYQ53nZY3FquevijlNMYoGSWje49p1xy5JkIuxORpqjUdHpS+MEkgPZrbiWrSsbYffqsj0aIMUYv6pJ8lsBsFtRxsi3ElIKcISCFYobKQbp0hNlQg2eK8/6aX/ANpUXsEf6si9APFYDpr8ZUXsDP1ZEDG4uTLoQhCagQhdUIcQhChAQhChD2n0dH/din9urvzNWwBWO9HXyYpvbq78zVsAVrh1RhydmOApYTYSwiYscS2psJxqVIJcjgXVwIShwKFWetH4FTLqJWE2j8wjhyCyHcAAXRcalIbsi5TwQNvJJJ/FdKSSrIIeNCbqNJ2mlt/W0KfkOlvMqO42VEZHlLWFw4MAv3XWarXlxqJdbyOysB4AdkK8rZRFFPIdSS4jvNrBZ+ocWxwtO5Li7xvZZs72o1+OqdkOihb1ozaMYesee4aqHUyF2U/+q4uHcC42ViwFlNO8jtSAxjwfofuVTVk9dSt2Ayt8gVgZ0kth2FodLbnTWuO94UjEGtY6HMNngWHhomaa4qwz/wCI5x8Q+4UvFGEtjcNT18R9w/1VkozGLNa2rsATdjb+NypOC4VVYjVws6m1OxwdISNLA7eJRi8JNSC31jFY+Idut10VjiioqdunWkDOdzdMcvqRLcuhTyQwiOldHFkYGsLm5mt0tsqmooKZo67FMSqZiScoa8xsv9FjG6rSVEFU6ImABzrHQm115/jVHihqy+tklgjcCyORlwyI20uRsFUY2HwjtVS4O42hpa0E37T3WBv9Z11Fp8NjkkvT1dRTvaRoHa3umcPwqFtYyXEq+iFNC05z8KbK6YkGzWBji6/PRaDDcPpZJ3dS6TqAS5rjmO2xBdqmShSAhPX6o0GEUtbHAGVFT15+Y5zbOtycq7pJVigpJ5C4tv2QR61zpYFX1IHRCMeWqoOmdG6ppMo4TMfbgeGqQ0OjuecRSOqXzPpqeR7ox1j3dkO1O5L0xWVss8dPC/rOy4l/WDcjQWstHHR4rSUro6WCjySWc55a58pOwuXaKoxmhnpqajmfq4Ocx5AsLu1WltcIxNSfJedFLOElh2mvABvwstsy2UBYDopOxkjmg9qSx8xot+w3ATY8HOzdjpCQQnCklGJGikHwTxCbchIMu4rz7pr8ZUXsDP1ZF6G5ee9N/jOh+z2fqyIZDMXYyyEIQGsEaIQoQEIQoQEIQoQ9o9HfyYp/bq38zVrwsh6O/kxT+3Vv5mrXjda4dUY59mKBSwU2OCW02RCx0FONOqZBTjEuSIh8Ll0DZcKUG2duFCrToweKlqHWEdjzRw5KIQKLhJui6cQ6SkFdSSVCDbyNVGkOieeVDqX5Y3niAbKEqyqr5A8EcM7W252NyVS1Ds7gCTq8k9wJvorOqvlgDuZJ92qrmtEk7dw0k+TW63WLKzoYkKnGWCFliHEl58HWACpqsXmZbZjwAeKuKok3eD2SRlA3sdBZVFQ24a7X1wfvWQ2jkZd8Mc4HaBrfI3U3FQWQUxubOnpQT3kWVfDYyTPB17LWjwIU7GXj4LTDg6porfWzIiLdlDi8tqoi2zntOveCtt0W9Rr/AJmRoF+JXn+JyZ553Eaid4/ktt0XlcKaInYADTuVyVIYmro9GheC1vgk1FNFMCJGMewjZwBCiQTXA7wpQkLtNVUZ+gtF7lQ7AMFaQYqKAODg4FrRoVMioY4WjK0NFho1TQBqUxPNkYbeSNzL02JcA2wULF4m1FG4DVwbf3J1nWPOZx048guyyUzY3l0g2tayS3YaVGapyGxtHC1rclQdLMhoCBYftoiPG5C0LnQieoZGbta7fvPJZTpZLaGCO+rpi7/pCKLbkhcqSZXdHnZaiG179dHtyJsV6dH6rV5p0YjElVlPEAjnoeC9MbYADkLLfBWjh5uwtcXUIjOJKaeNk7ukuChBgrz3px8aUP2cz9WVeiOBXnnTkf5pQ/ZzP1pEEhmLsZRCEJZrBCEKEBCEKEBCEKEPaPR38mKb26u/M1a5ZH0dfJin9trvzNWuWuPVGOfZihxSm7LjRZKCIAWNktm6QEtu6FkHuAXClDZvgklJLOKFWfN8CppUKs+YjiREFcK6466JJKMIC6yQSglNkokUJeVWVTy+7BzBcf5KbNJluR3qtmdZuVpOZzgXHlxKGTCivZBrXAhotzA8VAaSxjy0gPeOqbf+LRP1L7vfa3AN7jxUKZ+XKAdWNLufaKw5XbOnhjtY3JICW5fVbmHiALAqKWnqLng6/hrsnnm7bNNnPc2MDkN7pupc1kTo2/TaN/eUhcjyNAQDcjVxuP8AqUvGXdjDoxu6qpgBzyi6hwkmpihFuxG089yl4lKJMXwiBp7MZfK4DmQbH7kXsi23M7Xvd8InHD4RKfO9luuiLmvp2NJ5e9ef1L800rgb3lkcL97lq+ilUYnCN50JzN/onSX1Exl9z0uC7TbgLAKaCVXwSNe1pFtgpzDeyzNUbk9h4ONim+p60ODjYG/klHRKa7exF1FuW3+FTUYO6oJbUVD5acXIja58WvMlh1VPUYbWtppDSSWjY4/sml2bK3mSSr+rxKkpiWl4e8b3cAxviVl67pDTxOc01LI859WMdog8g0ZlektapcjNOHszl1817uvvcrK9K5C6ppIr+rG55He46LQ0tY6rlkczP1V8oMjS0k8xdZHpDM2TE6gN1EYbF5gao4R3M+XZNE/otKGYnC36Ubx56Fejg7Lyzo+4txCjcDa0gb5EEL09p2WuBx820kx9CSDddTBB1cK6gqFDbhuvOenXxpQ/Z0f6sq9HcvOenYtilD9nR/rSIJcB4uxk0IQlGwEIQoQEIQoQEIQoQ9p9HQ/3Xp/ba78zVrw3ZZL0cfJam9urvzNWwstcOqMc+zOW1SggBKA3RAHQlNSU41AyDo2HguELo4ISQmJKhVo0j8Sp6hVw7MfiUSKRXEJLrFLPFIJRBDbtk042CdcUxIfwTEUQal5vlG5OUKDO8RtA5XueZsnqh561luRt5qrrZ7kgagdkeJSpSo0QjbIUkls7r7aDxKiZjK8i/Zvd55AcSuTyABrBw1Ka1LGQjSSqcb23ETdSVgbt2dGKpUKbK0l0xHZa10jGn6N8rLqBJOSwOcd3uPiLEJddNkBa3QEBtu5osAqupl7MbPoNBPM35qRQwtMHJkq6iVx7PYbe2lm3UM1PX4tW1N+zBHMY7bAMGUKRE59Bhks97Pnbljv/ABi11UwXjpqyQmxewRt5uJOqZH9AZCfqb8SfxWqwWndLTtdGbSNOYFZkMDm5rHQhbfo20BkY46bq5sXGO9l9hte8ZYZ+zIOfHvWjiqG2B0VPUUDZ4w8DK8ahzRqLKDFV1VJII5wcoNmusVnbNMXtuat84c2w0OxVfU0rZWHLVVML3aO6uQgOHIBcpqqGYN7QU/4O2Ub6Ee9CtmGnW5n3YDTucHNqppDYhwlffz2TJwrDabNM5sPW8XusXHwLlfyYKyS5+ETs/wDqfa/jdV7sFoGFznPnkIN7ySX27gnatjQpqjO1lUynjnqbAMha4t0tc8F55NK+aWSR5u57nOPiTdbXplNDDDTUkRAMjuse0cGt2usPpeyPHvuc3yJNui0wl2SphdxbJEf+4L1VuzfALynC2XmjtfV8bf8AuC9VjHZZ4ALRAwZ+UOtStEgXSkwzCgurgXQrAYlw0XnHTz41oPs6P9aVekHivOOnnxrQ/Zsf60qGa2GYexkkIQkGwEIQoQEIQoQEIQoQ9t9G+vRam9urvzNWxAWP9Gw/3Wp/bq78zVsbLTF7Iwzf2YLtkAJSKwLOW70toXLJQFkDZaY4BsiyBwQljKOKJWi7GnkSpllFrf3Y8VcSFWeKbKcKbcjINu4qJObA+CkvO6gVDtD5q7IkVdZKWNe/loFSTSgNL3EBoGnipVfPneGXORvaeeGipamXrHBo9UEG38ismWXpHSwwpWwb+0lD33ynW3cOJTjXtaJpjbO67G/wx9yYvd1r66B3lwUOqqg1kmU6DspBoS9kSeXrai99AdvBdpKY19U4kEQteM2nrAa2vy5qHCyWeQht7u3PIHdWs0zaKD4LA/8AaOj/AGzm20vs3x5pnBLsjYxVtmlihiP7GG4aB6pPq3HdyUKR3YihA9XMXfWfwSXOBdnOzbW8U7DE937Vw7OrteJ4I3sgLti4mDqXjjnYFtcAj7DRbRoFjxWVooJZHtja0uc8lwDRrpwF1ssEFrDbh3/3wSJyGUq2NTBfKOISaijinbZzQd09E2w0SiCDt96UQzc9FUUZzQvcGg+quDpQzDmg11xHmDA5oJdfwVvV3LTvx4LzTpUXh9KDpcyEDmdBdHFW6LcqjZtn9OsCyEiokJt6ojddUNZ05jIkFNTOc517OncA3xs1YMX1XdCtKxoz/wBiVbEmsrKmvnfUVDy6R5uTwA5AclHG4QAE9TxdZLG0gkOcBYbm52R1Qq3Ldmo6O0D5JKR7mkNGad57ho0ea3jeSrMLpjTwMLm5XvDbt+i0bDRWbQmRMU5WxY3XUALunejFnQlLgCVZFQLEkbrzfp78a0H2bH+tKvSSF5v09+NaD7Nj/WlQ5OA8XcyKEIWc2ghCFCAhCFCAhCFCHt/o2+StN7dX/matiFjvRt8lqb26v/M1bJaI8GDJ2YapVlwJQUbAO7LoQuhCwkKC6uLqAccUWt/djxUpRq392PFEimVTk27inXcPBNOKMEjykgH7lTV0uVjhe2hVpUPsFlMYqcgkBvciw5BxQSdIdjhbKipnN3WIJdsO7mobjkHFz3GzfrHiUtgz5pXnTgD+KZc8NDpH8iG3+isT3Z1EqQmolbBG1t+3ICATyG7lUyl9S4RxbN3PMrs8slTK4i/Jt/mtG2q7G4scyCkjdNVSuytyAlxJ4NCJJIpv0SBJDQRZGWfUOALnXu1t1XPkLiSTe+553V43oj0mnOZ8cLC7U55bnXXUBOjoRjpveelHhnP8lXzY095AvXwkZ1liWlx7I4c1YRl8zg0DKwWBHf3KfJ0N6RQgFnwaQ/wvIOn1goThiWFPArsPc1oNs4Fhfue27VbnCfVkj9eyLikp/VOoNwWuaSHNPAgjVamkAY6OSRpzHSVwHZkcT65A+dzWbw7EsLqS1rJRFJpZk9m3Pc7ZaeB8jA28eZmmrTwSnF+xj/0X8MjS1paQWkbpbiNTp3KmFXHH6ge0Xu4EaDwCkisY4Xa9rm8NfxCArcTVyNDXC/Nee9ImNmnhDg4tDXajcG+4W2q5MwJFvJUdZR5pKdzxdjrtJsNLoo7Mt8UYYUbXOIjef+ZpTjMNqHi7SL8Ry8VtX4fAxujG3521T2H4ZBU5i5jbt96frYrQkYhmFyE2c7XkArihwQ5mPJPZNxwuta/BmR6tYB5ap6GkycOSFzYSikMU76mmY1ru2wDiNQOYVnE8Pa1wIsdRZJMItayZgJimMR9V9y3ucOCPHlt0zLmxKtSJwXeK4F1bTnsUAlWSRwSwjFtiTxXm/T741w/7Nj/WlXpR2XmvT/42oPs2P9aVBkWw3D3MghCFmNwIQhQgI1QhQgIQhQh7f6NvktTe3V/5mrZLG+jb5K03t1f+Zq2S0R4Ofk7M6EsBICcHFRgAOKUFxdCBsZE6OC6hCoaCjVf7v/mUhMVQJjH1lceQWVbgo8gUp4OqjS7eAunNArkrKl245cViMUL5qosabgEX7uJWzqHNDZC423N+QCxUzwH1E59aRzyL/NaNlmyulRt8dNshVDw39k2wtYEfyVTWVF7wtO5AeeZ+iE5VVBaJHn1nkhmuw+kUxTQ9VGayfV7x+wYdw0/PI7+CzxRucq2Go6ernmgpII8087wyOMcXHi48huV6dgXR2kwaEE5Za2QDr6kjXXdsd9mhUfQig66orcTkb+7/AMNC4/Std5adu5bwtC5Xn+S/8cRuPFbtjJb3pOXvKeLdEnKuTZrqhstHNNTU8Esbo5o2yMcCCHAG4Kk2XDZWm07RTSfJ51j/AETMIkrMMa50YOaWAeszjdg5KmwzpDi2GODA8zU7TZ0ExJA11DSdQV6w9oPq6GxFuDvFZfGei1JiBfNTgQVVruyizHnvAXZ8bzFWjIYsmHT9oD2G9IcHxOzA4U9Sf/JnIFzyY/YqZNGGuzNOVwt4HjqF5jX4XiWGvLamF7Wg9mVt+rPnuFKoukGK0jWxOk6+BugjmNy0fwu3XR0KSuIqOWtpHpUjYqiJk1KwMqGjLU02pY+w/eQX+8KJLKx1OAQLh7cpI1BB1VPh/SPC58rJJDTymwtJ2Wk82vGl+SlTVLXveHSNkzOBjeC0tku0kBxbpdKaa5GWnwWb2tfFnaRq26bwqojgqDG/QPOnL3qPTySCmgkc1zWTCQx5tiGGxTLrZwRzVplco2pEUjARbgmDG0Kooq6RgDHuu0aKbPiFJDE6WaaOKMC95HAXA10B1Uf+gFsPkAfgs/jWK0WGgOe9rqlrrshZq42+lbZUuL9Mi4Phw1pbe7TO/c307AVZhnR3GcYeKmcvhp3G7pprmWT6jSrSUHqlsBOarSj0OkqY6umpqqMjJPG14sbgEjVvlspAUTDqKHD6SCjhN2QAtuTdxucxJUwLpY5KatHJmnFtMW1KtoktTgTBLYkheaekAf5th/2bH+tKvTDqvNPSB8bYf9lx/rSoMq+o3B3MehdO64sp0AQhChAQhChAQhChD2/0bfJWm9vr/wAzVs9VjPRt8lqb2+v/ADNWzT1wYMnZgLpY/FJCUFGAKXVxdQhxFDghcXVQ0ExU/uz3EFPpmo/du8Qri9wXwVjtvMqLNsfAqU5Q6knKQNyFpAszmJzZIpxpcizQeZWPqnZ+xchou557mrTY04eqdxYeLt1kK1zhC4tP715hZ3/SKwZn9qOrgVRsr2w/CpXPeCIWnrJCNg0aCMJNXMZHNAsLXP1dNPcpbx1UMcDbXOhPM8SVHo4W1FdC0m7TPBER9LM/UfclSdJv8Gez1Ho3RtpMJoIm3aOpZI6+hL5BnN+9XBsLpmMwxU/Wyvjip4RYukcGMHAm5WbxLpxg1G+WKlikq5GEtzghsJPcdyvOaMmebcUb1KMVuzTkHkkarzmfp/i7yeppqWIcAQ5595KZHTvHxbMyld4x/wBCnr+PzfgH9iH6ellcIWCp/SBODaqoI3/xQuLSPJ1wr+j6XdHq3K10r6eUj1agWbflnGiXPxMsOUEssZey6c0Hx3HekZQ7cdrgUsFkjQ+NzXsOzmEOafMI7j5FZ1tswuSNPTQTB0czGuDhY3AII7wdFl8Q6F0E7nSUbnUz3cGjND/07hbG3u71wgcE/HmyY+rEzxqXJ5RWdFsfpLltOKiMfOp3ZtO9psVVObXU1w9lRFzDg9uo7ivay0H/AE0SHQwv0fGxw5Pa134roQ/kHxJGZ4H6PJo+kWNxsgj+F544GuZC2VrHBjXbgXCQcdxZ2vXM8mN/ovVH4ZhD/XoaU+MLP6IbhmEs9ShpmnmImf0TH50P/IPxTXs8vjxbpDIS2KWZxOlo47794CnQdH+k2JvD6jrGNNu3VuJy+DLr0lkMMf7uFjeeRrWj7gnWtNzezb/3uly85vqifHJ8mewjonhmHlk1QPhNSNc0gGUH+Fuy0ZaAAPVaOA00SgANhfvJXHWG+pO3+iw5Mssj3Y6MFEjNcwSFrb3LSRyKdBUd73CaMABrToSdzfgn16D+PleOvw5PlqpWOtTiabwTgXVSMDOrzP0g3/2vh/2ZH+tKvTF5n6QfjfD/ALMj/WlS8vUdg7mPXEIWM6AIQhQgIQhQgIQhQh7f6NvktTe3V/5mrZLG+jb5LU3t1f8Amatknrg5+TsxQSwkBLCpgHV0bri6N1QyIpC4hCNOpqb92/yTiRN+7eiXID4Kt/FQarQHmASp7raqsxCTq4KmTQZI3m/kVpeyAjyYXGahz5DlOjc1vrHdUU9n1FFGdGxR63+k7tEqdVO614F7HQnzOqrah37d5HFxaPIALmydys7MdokOpn1neB6t2t14k2un+j7Q7E8Pc82ax0lQ8nYANIBPhqVXVOkbu9499002olic4xvLSYzHmG+UixCjjqVIDVTst8ex6rxeqe3rHNoIXuZSQNPZDAbB7rbk7pihwTF8Wlc2kgcQ1rOskk7DW5hcXurfofgba6pFVUxtdBT2LA8Eh0h1GncvVaeCKIdhjW3y3ygDYW4KKUcK0xClCc3uedU/o4rntaZ6+JjiNQyMut5kqQ/0Zvt2MR7XDNDYfcV6UGjklWtsq+Vk+JHj1Z6Psfpw50EtNUADQAmNx8nf1WcrcLxTDyRWUsseUgXc0lh/5hovoB7LjX71AqqWnqI3RzxskjcLOa8AtI8Cr+b9KeL8PFMLxzFMLeDTTuMd7uieS6Nw5WXouC9JMPxgNYbQVlrugcdHfxROO/gqfHehtM7rJ8N/ZSWJMJ/du5ZeSwjhVUVQQ4SQ1ELr8Q5rhxBWfL4+PMrXJcMs8b3PcbHlp3rhCy/RnpTFiDYqGvc1lYBljkdo2cd5+ktWWkE/zXBy45YpVI2qakrQjKuWKc4JOiXZBNjyXdeQR5o05/eiKE5XE76dwXQGjckrlmbk37jqjMPmtJ8rBECOC52FgOJSHOAOgJP3oc5zWl0jmMYLlxc4NaB3uKzuKdLMKoWvjpC2qqNR2b9U13Mu4o8eOU3UUC2krZA6WYvW0MtJBTSNYXxuke7LctseBK09LKJ6almBzdbDG+4vrdoJOqwmHl2OTVlXiQ658Tg2C47LBa9mhbunLTBCW2A6ttgBoLC2gXqPCx/Hj0vk5HmS1NSXBJbrZOjZMs4J0LoJnOYrmvM/SEP83w77Mj/WlXpi809IXxth32ZH+tKl5eg7x3/yGNQhCxHSBCEKEBCEKEBCOHmhQh7h6NQf/CtN7dX8vpNWyse/7l5F0Rc4YLEAT/xVTx7wr/M76R95WiPBgydmb8A/3ZLF/wC7Lz0Od9I+8pRc7s9o78yowaPQgCb/ANQgA/2QvPszvpH3lKa52vaPvKWw48noNj/ZCLH+yF59md9I+8rmZ30j7yqGnoVj/ZCRKD1b/DuWAzO+kfeUmRzsp7R95RR5KrY1rwdVQdIS4YfOB898bDqNQXbKmc51tzuOJ5KoxZzuptc2zt4nvWmXUVjX2RBmILswt235BtoAbqBURa59NZZB56KOSc7PrFceTlH/ANj/AOS5jW52CDVmwLf4s3uUMAl7ABdxc0AcyTonqn1vI/imo/3sX12fmCZ6Ff8AZHtPR+g+B0FHAGgERgvtbV51N1omRnS4Xn1O52Vup2HEqWxzuZ95WV7s1N7m9aO5dIP92WGDncz7yjM7mfeUYNm2cDYqPIzc20WOLnX3PvKYe53M+8pcluEjT1EZIPZ9/wD+rI4/gtPiDHODAyoaCY5Ba+nByJnOtuduZVfMXWOp25+KFbMrSpbMxU0NRSTOjlBZIw3BF/JzSr6i6ZdIqSNkZljqI2ABvwlmZwA4Zh2lU4p/xDfqD8VBC1vHHIvsjJqeN1E3UXpAqxl67DoHjj1cj2n77qdF07w11uvoqhl+Mb2uA99ivOBw8V13rHxWeXg4X6GLPM9TZ0w6NOALpKhh5GEn8Cunpd0Z/wDcS+AhfdeWoS/6GKwvnkejz9NsGjH7CColPPssb/3aqpqenGJyXFJTwQDm4mR/36LGc11vBOj4WJehUs8y1q8VxXET/iaqeU8GAnL5NapmG9GsaxEtIh+DwG15qnQ2PFrN1V0H/FReK2jHOyDU7cyqzS+CP0QnU5vdk6HBYMJgayHO/MSZpH2u55G+nDkrOgOana0/Mc5h201WaqC7IdTuOKbpScjtT6zuKPwMjnuwfJVQSNu2/wDZCcGbkfuWMaXXGp96dDnaan3rro5kjYi55/cvNPSHpi2HfZkfL/1pVeZnczx4lY7pQSa6nuSf8Iwa/Xegy9B3j/5CiQhcWI6R1CEFQsEIXPo+P8ioUf/Z"
+                                    alt="The Emptiness Machine - Linkin Park" style="object-fit: cover;">
+                            </a>
+                        </div>
+                        <div class="card-body text-center d-flex flex-column justify-content-center py-1">
+
+                            <p class="h6 font-weight-bold text-white"><a class="text-white"
+                                    href="https://youtu.be/cE6wxDqdOV0" target="_blank">Video Games</a>
+                            </p>
+                            <p class="text-light m-0"><small>Lana Del Rey</small></p>
+
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="https://youtu.be/cE6wxDqdOV0" class="btn btn-outline-primary btn-sm btn-block"
+                                target="_blank"><i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+
+                <!-- Card 6 -->
+                <div class="col-lg-2 mb-2">
+                    <div class="card bg-dark m-2 h-100 d-flex flex-column">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <a href="https://youtu.be/LMyuNG1wyKU?list=RDLMyuNG1wyKU" target="_blank">
+                                <img class="card-img-top" src="https://i.ytimg.com/vi/LMyuNG1wyKU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC25f1UzJmoKJ7cYc8w6XeFp7ebFw
+                                    alt=" The Emptiness Machine - Linkin Park" style="object-fit: cover;">
+                            </a>
+                        </div>
+                        <div class="card-body text-center d-flex flex-column justify-content-center py-1">
+
+                            <p class="h6 font-weight-bold text-white"><a class="text-white"
+                                    href="https://youtu.be/LMyuNG1wyKU?list=RDLMyuNG1wyKU" target="_blank">The
+                                    Chronicles of Narnia</a>
+                            </p>
+                            <p class="text-light m-0"><small>Gregson-Williams</small></p>
+
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="https://youtu.be/LMyuNG1wyKU?list=RDLMyuNG1wyKU"
+                                class="btn btn-outline-primary btn-sm btn-block" target="_blank"><i
+                                    class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+    <!-- Contact Start -->
+    <!-- <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Me Contacter</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Votre Nom"
+                                        required="required"
+                                        data-validation-required-message="Veuillez entrer votre nom" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Votre Email"
+                                        required="required"
+                                        data-validation-required-message="Veuillez entrer votre email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Sujet"
+                                    required="required" data-validation-required-message="Veuillez saisir un sujet" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Veuillez entrer votre message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit"
+                                    id="sendMessageButton">Envoyer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-4 px-sm-3 px-md-5">
+        <div class="container text-center py-2">
+            <div class="d-flex justify-content-center mb-3">
+                <!-- <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a> -->
+                <!-- <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a> -->
+                <a class="btn btn-light btn-social mr-4" href="https://www.linkedin.com/in/cl%C3%A9ment-bonjour/"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <!-- <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a> -->
+                <a class="btn btn-light btn-social" href="mailto:bonjour.clement.pro@gmail.com"><i
+                        class="fa fa-envelope"></i></a>
+            </div>
+            <!-- <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Privacy</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Terms</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQs</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Help</a>
+            </div> -->
+            <p class="m-0">
+                <span><a class="text-white font-weight-bold" href="#">Clément Bonjour</a> - 2025 - </span>
+                <span>Portfolio</span>
+                <br>
+                <!-- &copy;
+                <a class="text-white font-weight-bold" href="#">Domain Name</a>. All Rights Reserved. -->
+                <small>Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML
+                        Codex</a></small>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
